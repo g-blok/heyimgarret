@@ -2,8 +2,8 @@
 
 /* Header Container */
 header {
-    background-color: $gray-light; /* Background color for the header */
-    color: $gray-light; /* Text color */
+    background-color: $forest; /* Background color for the header */
+    color: $white; /* Text color */
     padding: 10px 20px; /* Adjust padding as needed */
     display: flex;
     justify-content: space-between;
@@ -31,13 +31,13 @@ ul {
             text-decoration: none;
             font-size: 1.2em;
             font-weight: bold;
-            color: $gray-medium-light;
+            color: $white;
         }
     }
 }
 
 .cta {
-    background-color: $orange;
+    background-color: $lake;
     border-radius: 20px;
 
     a {
