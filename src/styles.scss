@@ -1,7 +1,7 @@
 /* import Montserrat from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
   
-/* define app colors */
+/* orange-purple */
 $mustard: #FFBB7C;
 $peach: #FFA477;
 $orange: #ED7855;
@@ -9,6 +9,15 @@ $brick: #B85C4F;
 $mauve: #AC6D7E;
 $eggplant: #66475B;
 
+/* green-blue */
+$tan: #CBA784;
+$veggie: #9D904E;
+$moss: #4A8164;
+$forest: #223B2E;
+$lake: #1E4177;
+$sky: #9CA6CB;
+
+/* grays */
 $gray-dark: #312C29;
 $gray-medium-darker: #3B3732;
 $gray-medium-dark: #48433E;
@@ -22,8 +31,8 @@ $black: #000;
 
 /* global font family assignment */
 html {
-    background-color: $gray-light;
+    background-color: $forest;
     font-family: 'Montserrat', sans-serif;
     font-size: 1em !important;
-    color: $gray-medium-dark;
+    color: $white;
 }
