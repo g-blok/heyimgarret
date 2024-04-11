@@ -10,6 +10,7 @@ import { AdventuresComponent } from './components/adventures/adventures.componen
 import { ContactComponent } from './components/contact/contact.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { WorkComponent } from './components/work/work.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { WorkComponent } from './components/work/work.component';
     AdventuresComponent,
     ContactComponent,
     HeroComponent,
-    WorkComponent
+    WorkComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
