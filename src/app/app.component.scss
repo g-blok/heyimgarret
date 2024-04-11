@@ -1,6 +1,14 @@
+@import '../styles.scss';
+
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 6rem;
+
+    .section {
+        display: flex;
+        justify-content: center;
+        max-width: 1200px;
+    }
 }
