@@ -1,7 +1,7 @@
 @import '../../../styles.scss';
 
 .work-container {
-    max-width: 60%;
+    width: 60%;
 
     .section-title {
         font-size: 1.5rem;
@@ -12,33 +12,38 @@
     .work-inner {
         display: flex;
         flex-direction: row;
+        width: 100%;
     }
     
     .work-tabs {
-        width: 20%;
+        min-width: 30%;
+        width: 30%;
         
         ul {
             gap: 2rem;
             list-style-type: none;
+
     
             li {
+                width: 100%;
                 padding: 1rem;
-                border-left: 10px solid $moss;
             }
             li:hover {
                 background-color: $moss;
                 color: $forest;
+                font-weight: bold;
+                border-radius: 1rem;
             }
-            li:first-child {
-                border-left: 10px solid $tan;
-                background-color: $tan;
-                color: $forest;
+            
+            .selected {
+                color: $tan;
+                font-weight: bold;
             }
         }
     }
     
     .work-description {
-        padding: 1rem 4rem;
+        padding: 1rem 0 0 4rem;
     
         .desc-header {
             display: flex;
@@ -47,7 +52,7 @@
             
             .job-title {
                 font-size: 1.5rem;
-                padding-right: 0.5rem;
+                padding-right: 0;
                 color: $white;
             }
 
@@ -55,6 +60,7 @@
                 font-size: 1.5rem;
                 font-weight: bold;
                 color: $tan;
+                margin-left: 1rem;
             }
         }
     }
