@@ -3,38 +3,34 @@
     <div class="work-inner">
         <div class="work-tabs">
             <ul class="work-list">
-                <li>QCells</li>
-                <li>Geli</li>
-                <li>Photon Brothers</li>
-                <li>Landmark Irrigation</li>
-                <li>Bowsmith Irrigation</li>
-                <li>Puresence</li>
-              </ul>
+                <li
+                    *ngFor="let work of workList"
+                    [ngClass]="{'selected': work.selected }"
+                    (click)="selectWork(work.company)"
+                >
+                    {{ work.displayName }}
+                </li>
+            </ul>
         </div>
         <div class="work-description">
             <div class="desc-header">
-                <div class="job-title">UI Engineer</div>
-                <div class="company">@QCells</div>
+                <div class="job-title">{{ selectedWork?.jobTitle }}</div>
+                <div class="company">@{{ selectedWork?.displayName }}</div>
             </div>
             <div class="desc-body">
                 <ul class="desc-list">
-                    <li>Utility Scale Energy Storage Monitoring Platform</li>
-                    <ul>
-                        <li>Led design and development of a monitoring platform for utility-scale energy storage (190 MW / 380 MWh).</li>
-                        <li>Spearheaded initial design using Figma, coordinating with internal and external stakeholders.</li>
-                        <li>Played a pivotal role in UI development, responsible for all development work in the platform's 2.0 release.</li>
-                    </ul>
-                    <li>Developed Express.js Microservice</li>
-                    <ul>
-                        <li>Engineered an Express.js backend-for-frontend microservice incorporating Puppeteer and EJS.</li>
-                        <li>Enabled user-defined scheduling for fetching, manipulating, and hydrating data into HTML documents, converting them to PDFs, and emailing them via AWS services (S3, SES).</li>
-                        <li>Managed full lifecycle: database creation, SQL scripting in JavaScript, architectural planning, stakeholder engagement, and Kubernetes-based deployment.</li>
-                    </ul>
-                    <li>AngularJS to Angular 14 Migration</li>
-                    <ul>
-                        <li>Contributed to the migration from AngularJS to Angular 14, translating legacy code and developing new features.</li>
-                        <li>Enhanced application performance and user experience in alignment with modern web standards.</li>
-                    </ul>
+                    <li
+                        *ngFor="let desc of selectedWork?.description"
+                    >
+                        {{ desc.task }}
+                        <ul>
+                            <li
+                                *ngFor="let detail of desc.details"
+                            >
+                                {{ detail }}    
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
