@@ -5,14 +5,19 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { AdventuresComponent } from './components/adventures/adventures.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HeroComponent } from './components/hero/hero.component';
+import { WorkComponent } from './components/work/work.component';
+import { FooterComponent } from './components/footer/footer.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/hero', pathMatch: 'full' },
   { path: 'hero', component: HeroComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'work', component: WorkComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'adventures', component: AdventuresComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'footer', component: FooterComponent },
   // Add any other routes you need here
 ];
 

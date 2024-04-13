@@ -1,0 +1,39 @@
+@import '../../../styles.scss';
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 40%;
+    gap: 0.5rem;
+
+    .section-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $white;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 4rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .body-text {
+        text-align: center;
+    }
+
+    .cta {
+        margin-top: 2rem;
+        background-color: $lake;
+        border-radius: 20px;
+        padding: 1rem;
+        text-align: center;
+    
+        a {
+            font-weight: bold;
+            color: white !important;
+        }
+    }
+}

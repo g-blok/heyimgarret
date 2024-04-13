@@ -1,0 +1,60 @@
+@import '../../../styles.scss';
+
+$footer-height: 150px;
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - var(--footer-height));
+    width: 60%;
+    max-width: 100%;
+    flex-direction: row;
+    position: relative;
+}
+  
+.text-column {
+    width: 100%;
+    padding-bottom: 5rem;
+    gap: 10px;
+    height: 300px;
+
+    .title {
+        font-size: 5rem;
+        background: linear-gradient(to right, $white, $white);
+        -webkit-background-clip: text;
+        color: transparent;
+        margin: 0;
+        display: block;
+        line-height: 1.2;
+    }
+    
+    .subtitle {
+        font-size: 1.6rem;
+        color: $tan;
+        display: block;
+        line-height: 1.2;
+        font-weight: bold;
+    }
+}
+
+.person-image {
+    max-width: 50%;
+    max-height: 50vh;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+}
+
+.flower-footer {
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+
+    .flower-image {
+        height: $footer-height;
+        display: block;
+    }
+}
+  

@@ -1,0 +1,61 @@
+@import '../../../styles.scss';
+
+.work-container {
+    max-width: 60%;
+
+    .section-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $white;
+    }
+    
+    .work-inner {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .work-tabs {
+        width: 20%;
+        
+        ul {
+            gap: 2rem;
+            list-style-type: none;
+    
+            li {
+                padding: 1rem;
+                border-left: 10px solid $moss;
+            }
+            li:hover {
+                background-color: $moss;
+                color: $forest;
+            }
+            li:first-child {
+                border-left: 10px solid $tan;
+                background-color: $tan;
+                color: $forest;
+            }
+        }
+    }
+    
+    .work-description {
+        padding: 1rem 4rem;
+    
+        .desc-header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+            .job-title {
+                font-size: 1.5rem;
+                padding-right: 0.5rem;
+                color: $white;
+            }
+
+            .company {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: $tan;
+            }
+        }
+    }
+}

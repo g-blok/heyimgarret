@@ -1,0 +1,46 @@
+@import '../../../styles.scss';
+
+.projects-container {
+    max-width: 60%; 
+    
+    .section-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $white;
+        margin-bottom: 4rem;
+    }
+    
+    .project {
+        height: 16rem;
+        display: flex;
+        justify-content: space-between;
+    
+        .project-image {
+            max-width: 200px;
+            max-height: 200px;
+        }
+    
+        .project-info {
+    
+            .info-header {
+                text-align: end;
+                padding: 0 1rem 1rem 0;
+                color: white;
+            }
+    
+            .info-body {
+                text-align: end;
+                padding: 2rem;
+                border-radius: 1rem;
+                background-color: $moss;
+                color: black;
+            }
+    
+            .info-links {
+                text-align: end;
+                padding: 1rem 1rem 0 0;
+                color: white;
+            }
+        }
+    }
+}
