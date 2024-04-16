@@ -41,16 +41,25 @@ export const WORK_LIST = [
         selected: false,
         description: [
             {
-                task: '0 blah blah blah',
-                details: [ 'more blah' ]
+                task: 'Python Tool for Standardized Deliverables',
+                details: [ 
+                    'Developed a Python-based tool to standardize customer deliverables, transitioning from Excel-based ad-hoc processes to a formalized system',
+                    'Demonstrated market demand for such tools, paving the way for the subsequent development of the Express.js microservice.'
+                ]
             },
             {
-                task: '1 blah blah blah',
-                details: [ 'more blah' ]
+                task: 'Australia Virtual Power Plant Market Analysis',
+                details: [
+                    'Led the analysis for entry into the Australia Virtual Power Plant market, creating Python tools for batch simulations and result compilation.',
+                    'Utilized Streamlit and later Dash by Plotly for exploratory data analysis, contributing to new business models and market expansion.'
+                ]
             },
             {
-                task: '2 blah blah blah',
-                details: [ 'more blah' ]
+                task: 'CA SGIP GHG Reduction Measures Analysis',
+                details: [
+                    "Conducted the initial analysis for California's SGIP GHG reduction measures (April 2020), developing Python tools for regulatory compliance.",
+                    'Collaborated with the data science team to productize the project for deployment in existing systems.'
+                ]
             },
         ]
     },
@@ -63,16 +72,25 @@ export const WORK_LIST = [
         selected: false,
         description: [
             {
-                task: '0 blah blah blah',
-                details: [ 'more blah' ]
+                task: 'Lead in Commercial Solar and Energy Storage Sales',
+                details: [
+                    "Spearheaded the company's expansion into commercial solar and residential/commercial energy storage sectors.",
+                    'Served as the lead commercial salesperson in the California branch, leveraging analytics expertise to optimize system benefits for customers.'
+             ]
             },
             {
-                task: '1 blah blah blah',
-                details: [ 'more blah' ]
+                task: 'Commercial Solar and Solar+Storage Analytics',
+                details: [
+                    'Led commercial solar and solar+storage analytics for California and Colorado markets.',
+                    'Crafted customer proposals using EnergyToolbase and custom Excel tools, enhancing proposal quality and effectiveness.'
+                ]
             },
             {
-                task: '2 blah blah blah',
-                details: [ 'more blah' ]
+                task: 'Development of Company-Wide Sales Tool:',
+                details: [
+                    'Created a comprehensive sales tool for the residential market, utilized company-wide by the salesforce.',
+                    'Enabled real-time, in-home system comparisons and customization, significantly improving customer engagement and sales efficiency.'    
+                ]
             },
         ]
     },
