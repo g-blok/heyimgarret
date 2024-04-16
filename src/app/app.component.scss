@@ -4,11 +4,13 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 6rem;
+    padding-top: 6rem;
+    gap: 10rem;
 
     .section {
         display: flex;
         justify-content: center;
-        max-width: 1200px;
+        border-bottom-left-radius: 50px 50px;
+        border-bottom-right-radius: 50px 50px;
     }
 }
