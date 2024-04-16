@@ -6,7 +6,7 @@
     .section-title {
         font-size: 1.5rem;
         font-weight: bold;
-        color: $white;
+        color: $forest;
     }
     
     .work-inner {
@@ -27,6 +27,7 @@
             li {
                 width: 100%;
                 padding: 1rem;
+                cursor: pointer;
             }
             li:hover {
                 background-color: $moss;
@@ -36,7 +37,7 @@
             }
             
             .selected {
-                color: $tan;
+                color: $tan !important;
                 font-weight: bold;
             }
         }
@@ -53,7 +54,7 @@
             .job-title {
                 font-size: 1.5rem;
                 padding-right: 0;
-                color: $white;
+                color: $forest;
             }
 
             .company {

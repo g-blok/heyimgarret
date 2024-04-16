@@ -10,6 +10,7 @@ $mauve: #AC6D7E;
 $eggplant: #66475B;
 
 /* green-blue */
+$beige: #FDFAF8;
 $tan: #CBA784;
 $veggie: #9D904E;
 $moss: #4A8164;
@@ -31,12 +32,16 @@ $black: #000;
 
 /* global font family assignment */
 html {
-    background-color: $forest;
+    background-color: $beige;
     font-family: 'Montserrat', sans-serif;
     font-size: 1em !important;
-    color: $gray-medium-lighter;
+    color: $gray-medium;
 }
-html, body { height: 100%; }
+html, body {
+    height: 100%;
+    margin: 0.1rem;
+}
+
 button {
     font-family: inherit;
 }
