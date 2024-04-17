@@ -17,7 +17,30 @@
                 <div class="job-title">{{ selectedWork?.jobTitle }}</div>
                 <div class="company">@{{ selectedWork?.displayName }}</div>
             </div>
-            <div class="desc-body">
+            <div *ngIf="selectedWork?.softwareBased" class="desc-body">
+                <ul class="desc-list">
+                    <li> Overview: {{ selectedWork?.overview }} </li>
+                    <li> Key Achievments:
+                        <ul>
+                            <li
+                                *ngFor="let achievement of selectedWork?.achievements"
+                            >
+                                {{ achievement }}    
+                            </li>
+                        </ul>
+                    </li>
+                    <li> Technologies:
+                        <ul>
+                            <li
+                                *ngFor="let technology of selectedWork?.technologies"
+                            >
+                                {{ technology }}    
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div *ngIf="!selectedWork?.softwareBased" class="desc-body">
                 <ul class="desc-list">
                     <li
                         *ngFor="let desc of selectedWork?.description"
