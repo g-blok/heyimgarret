@@ -3,7 +3,6 @@ export const WORK_LIST = [
         company: 'qcells',
         displayName: 'QCells',
         jobTitle: 'UI Engineer',
-        softwareBased: true,
         startDate: 'Jan 2021',
         endDate: 'Current',
         selected: true,
@@ -21,7 +20,6 @@ export const WORK_LIST = [
         company: 'geli',
         displayName: 'Geli',
         jobTitle: 'Analytics Engineer',
-        softwareBased: true,
         startDate: 'Jan 2021',
         endDate: 'Aug 2019',
         selected: false,
@@ -32,94 +30,54 @@ export const WORK_LIST = [
             "Conducted pivotal analysis for California's SGIP GHG reduction measures using custom Python tools, collaborating with the data science team to integrate these tools into existing systems for enhanced compliance and deployment."
         ],
         technologies: [
-            'Python', 'Streamlit', 'Dash', 'Ploty', 'Excel', 'VBA'
+            'Python', 'Streamlit', 'Dash', 'Ploty', 'Excel', 'VBA', 'Salesforce',
+        ],
+        links: [
+            {
+                display: 'Geli Acquisition',
+                url: 'https://www.greentechmedia.com/articles/read/hanwha-q-cells-buys-geli-to-tap-into-north-american-ci-solar-storage-market'
+            },
+            {
+                display: 'ERCOT ESS',
+                url: 'https://www.energy-storage.news/acciona-energia-buys-380mwh-ercot-battery-storage-project-from-qcells/'
+            }
         ]
     },
     {
         company: 'photon',
         displayName: 'Photon Brothers',
         jobTitle: 'Sales Engineer',
-        softwareBased: false,
         startDate: 'Aug 2019',
         endDate: 'Feb 2017',
         selected: false,
-        description: [
-            {
-                task: 'Lead in Commercial Solar and Energy Storage Sales',
-                details: [
-                    "Spearheaded the company's expansion into commercial solar and residential/commercial energy storage sectors.",
-                    'Served as the lead commercial salesperson in the California branch, leveraging analytics expertise to optimize system benefits for customers.'
-             ]
-            },
-            {
-                task: 'Commercial Solar and Solar+Storage Analytics',
-                details: [
-                    'Led commercial solar and solar+storage analytics for California and Colorado markets.',
-                    'Crafted customer proposals using EnergyToolbase and custom Excel tools, enhancing proposal quality and effectiveness.'
-                ]
-            },
-            {
-                task: 'Development of Company-Wide Sales Tool:',
-                details: [
-                    'Created a comprehensive sales tool for the residential market, utilized company-wide by the salesforce.',
-                    'Enabled real-time, in-home system comparisons and customization, significantly improving customer engagement and sales efficiency.'    
-                ]
-            },
+        overview: 'Led the sales and analytics initiatives for commercial solar and energy storage systems, driving market expansion and optimizing customer solutions across California and Colorado.',
+        achievements: [
+            "Market Expansion: Spearheaded the company's entry into the commercial solar and energy storage sectors, establishing a strong foothold in new markets.",
+            'Sales Leadership: Served as the primary sales lead, utilizing deep analytics to optimize system proposals and maximize customer benefits, resulting in heightened customer acquisition and satisfaction.',
+            'Analytics and Proposal Enhancement: Directed analytics operations for commercial solar and storage solutions, using advanced tools to craft precise and compelling customer proposals.',
+            'Sales Tool Development: Developed and implemented a comprehensive, company-wide sales tool for the residential market, enhancing real-time customization and significantly improving sales process efficiency and customer engagement.'
+        ],
+        technologies: [
+            'EnergyToolbase', 'Excel', 'VBA', 'Aurora', 'AutoCAD', 'Salesforce',
         ]
     },
     {
         company: 'landmark',
         displayName: 'Landmark Irrigation',
         jobTitle: 'Irrigation Engineer',
-        softwareBased: false,
         startDate: 'Feb 2017',
         endDate: 'Jun 2015',
         selected: false,
-        overview: 'garret',
+        overview: 'Executed advanced engineering designs and managed construction for large-scale hydraulic projects, focusing on optimizing fluid dynamics in various system configurations.',
         achievements: [
-            "Designed and developed a monitoring platform for a 190 MW / 380 MWh energy storage system, taking charge from initial Figma designs to full UI development in the platform's 2.0 release.",
-            'Engineered an Express.js microservice for automated data handling and reporting, utilizing Puppeteer and EJS to schedule tasks, transform data into PDFs, and manage communications through AWS (S3, SES).',
-            'Contributed significantly to the migration from AngularJS to Angular 14, focusing on performance enhancement and modern web standards compliance.'
+            'Engineering Design: Independently designed comprehensive fluid dynamics computations for open and closed hydraulic systems, enhancing project efficacy and stability.',
+            'Calculation Expertise: Routinely performed critical calculations for pumping stations, filtration systems, chemical treatments, and pipelines, ensuring operational accuracy and efficiency.',
+            'Construction Coordination: Directed field meetings with installation crews, overseeing the construction process to maintain fidelity to engineering designs and timelines.',
+            'Standardization Initiatives: Created an extensive AutoCAD library of in-field assemblies, standardizing installation processes and facilitating more accurate project quoting.',
+            'Cost Management: Developed detailed cost estimates for materials and labor, enabling precise budget management and financial planning for projects.'
         ],
         technologies: [
-            'Figma', 'Express.js', 'Puppeteer', 'EJS', 'AngularJS', 'Angular 14', 'AWS (S3, SES)', 'Kubernetes', 'SQL'
-        ],
-        description: [
-            {
-                task: '0 blah blah blah',
-                details: [ 'more blah' ]
-            },
-            {
-                task: '1 blah blah blah',
-                details: [ 'more blah' ]
-            },
-            {
-                task: '2 blah blah blah',
-                details: [ 'more blah' ]
-            },
-        ]
-    },
-    {
-        company: 'bowsmith',
-        displayName: 'Bowsmith Irrigation',
-        jobTitle: 'Mechanical Engineering Intern',
-        softwareBased: false,
-        startDate: 'Sep 2014',
-        endDate: 'Jun 2014',
-        selected: false,
-        description: [
-            {
-                task: '0 blah blah blah',
-                details: [ 'more blah' ]
-            },
-            {
-                task: '1 blah blah blah',
-                details: [ 'more blah' ]
-            },
-            {
-                task: '2 blah blah blah',
-                details: [ 'more blah' ]
-            },
+            'AutoCAD', 'IRRICAD', 'Excel', 'VBA'
         ]
     }
 ]
