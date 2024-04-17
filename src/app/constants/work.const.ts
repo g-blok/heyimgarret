@@ -3,70 +3,43 @@ export const WORK_LIST = [
         company: 'qcells',
         displayName: 'QCells',
         jobTitle: 'UI Engineer',
+        softwareBased: true,
         startDate: 'Jan 2021',
         endDate: 'Current',
         selected: true,
-        description: [
-            {
-                task: 'Utility Scale Energy Storage Monitoring Platform',
-                details: [
-                    'Led design and development of a monitoring platform for utility-scale energy storage (190 MW / 380 MWh).',
-                    'Spearheaded initial design using Figma, coordinating with internal and external stakeholders',
-                    "Played a pivotal role in UI development, responsible for all development work in the platform's 2.0 release."
-                ]
-            },
-            {
-                task: 'Developed Express.js Microservice',
-                details: [
-                    'Engineered an Express.js backend-for-frontend microservice incorporating Puppeteer and EJS.',
-                    'Enabled user-defined scheduling for fetching, manipulating, and hydrating data into HTML documents, converting them to PDFs, and emailing them via AWS services (S3, SES).',
-                    'Managed full lifecycle: database creation, SQL scripting in JavaScript, architectural planning, stakeholder engagement, and Kubernetes-based deployment.'
-                ]
-            },
-            {
-                task: 'AngularJS to Angular 14 Migration',
-                details: [
-                    'Contributed to the migration from AngularJS to Angular 14, translating legacy code and developing new features.',
-                    'Enhanced application performance and user experience in alignment with modern web standards.'
-                ]
-            },
+        overview: 'Led the design and development of critical software solutions, including a utility-scale energy storage monitoring platform and various backend services.',
+        achievements: [
+            "Designed and developed a monitoring platform for a 190 MW / 380 MWh energy storage system, taking charge from initial Figma designs to full UI development in the platform's 2.0 release.",
+            'Engineered an Express.js microservice for automated data handling and reporting, utilizing Puppeteer and EJS to schedule tasks, transform data into PDFs, and manage communications through AWS (S3, SES).',
+            'Contributed significantly to the migration from AngularJS to Angular 14, focusing on performance enhancement and modern web standards compliance.'
+        ],
+        technologies: [
+            'Figma', 'Express.js', 'Puppeteer', 'EJS', 'AngularJS', 'Angular 14', 'AWS (S3, SES)', 'Kubernetes', 'SQL'
         ]
     },
     {
         company: 'geli',
         displayName: 'Geli',
         jobTitle: 'Analytics Engineer',
+        softwareBased: true,
         startDate: 'Jan 2021',
         endDate: 'Aug 2019',
         selected: false,
-        description: [
-            {
-                task: 'Python Tool for Standardized Deliverables',
-                details: [ 
-                    'Developed a Python-based tool to standardize customer deliverables, transitioning from Excel-based ad-hoc processes to a formalized system',
-                    'Demonstrated market demand for such tools, paving the way for the subsequent development of the Express.js microservice.'
-                ]
-            },
-            {
-                task: 'Australia Virtual Power Plant Market Analysis',
-                details: [
-                    'Led the analysis for entry into the Australia Virtual Power Plant market, creating Python tools for batch simulations and result compilation.',
-                    'Utilized Streamlit and later Dash by Plotly for exploratory data analysis, contributing to new business models and market expansion.'
-                ]
-            },
-            {
-                task: 'CA SGIP GHG Reduction Measures Analysis',
-                details: [
-                    "Conducted the initial analysis for California's SGIP GHG reduction measures (April 2020), developing Python tools for regulatory compliance.",
-                    'Collaborated with the data science team to productize the project for deployment in existing systems.'
-                ]
-            },
+        overview: 'Spearheaded the development and analysis of Python-based tools for standardized deliverables and market entry strategies, enhancing regulatory compliance and market penetration.',
+        achievements: [
+            'Developed a Python tool to transition from Excel-based ad-hoc processes to a formalized system for standardizing customer deliverables, setting the stage for more advanced microservices development.',
+            'Led the market analysis for entry into the Australia Virtual Power Plant market, employing Python for simulations and Streamlit, later Dash by Plotly, for data visualization and analysis to support strategic decisions and business model innovation.',
+            "Conducted pivotal analysis for California's SGIP GHG reduction measures using custom Python tools, collaborating with the data science team to integrate these tools into existing systems for enhanced compliance and deployment."
+        ],
+        technologies: [
+            'Python', 'Streamlit', 'Dash', 'Ploty', 'Excel', 'VBA'
         ]
     },
     {
         company: 'photon',
         displayName: 'Photon Brothers',
         jobTitle: 'Sales Engineer',
+        softwareBased: false,
         startDate: 'Aug 2019',
         endDate: 'Feb 2017',
         selected: false,
@@ -98,9 +71,19 @@ export const WORK_LIST = [
         company: 'landmark',
         displayName: 'Landmark Irrigation',
         jobTitle: 'Irrigation Engineer',
+        softwareBased: false,
         startDate: 'Feb 2017',
         endDate: 'Jun 2015',
         selected: false,
+        overview: 'garret',
+        achievements: [
+            "Designed and developed a monitoring platform for a 190 MW / 380 MWh energy storage system, taking charge from initial Figma designs to full UI development in the platform's 2.0 release.",
+            'Engineered an Express.js microservice for automated data handling and reporting, utilizing Puppeteer and EJS to schedule tasks, transform data into PDFs, and manage communications through AWS (S3, SES).',
+            'Contributed significantly to the migration from AngularJS to Angular 14, focusing on performance enhancement and modern web standards compliance.'
+        ],
+        technologies: [
+            'Figma', 'Express.js', 'Puppeteer', 'EJS', 'AngularJS', 'Angular 14', 'AWS (S3, SES)', 'Kubernetes', 'SQL'
+        ],
         description: [
             {
                 task: '0 blah blah blah',
@@ -120,6 +103,7 @@ export const WORK_LIST = [
         company: 'bowsmith',
         displayName: 'Bowsmith Irrigation',
         jobTitle: 'Mechanical Engineering Intern',
+        softwareBased: false,
         startDate: 'Sep 2014',
         endDate: 'Jun 2014',
         selected: false,
