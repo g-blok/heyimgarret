@@ -17,44 +17,29 @@
                 <div class="job-title">{{ selectedWork?.jobTitle }}</div>
                 <div class="company">@{{ selectedWork?.displayName }}</div>
             </div>
-            <div *ngIf="selectedWork?.softwareBased" class="desc-body">
-                <ul class="desc-list">
-                    <li> Overview: {{ selectedWork?.overview }} </li>
-                    <li> Key Achievments:
-                        <ul>
-                            <li
-                                *ngFor="let achievement of selectedWork?.achievements"
-                            >
+            <div class="desc-body">
+                <div class="text-block">
+                    <div> {{ selectedWork?.overview }} </div>
+                    <div class="block-header"> Key Achievements
+                        <ul class="block-list">
+                            <li *ngFor="let achievement of selectedWork?.achievements">
                                 {{ achievement }}    
                             </li>
                         </ul>
-                    </li>
-                    <li> Technologies:
-                        <ul>
-                            <li
-                                *ngFor="let technology of selectedWork?.technologies"
-                            >
-                                {{ technology }}    
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div *ngIf="!selectedWork?.softwareBased" class="desc-body">
-                <ul class="desc-list">
-                    <li
-                        *ngFor="let desc of selectedWork?.description"
-                    >
-                        {{ desc.task }}
-                        <ul>
-                            <li
-                                *ngFor="let detail of desc.details"
-                            >
-                                {{ detail }}    
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                    </div>
+                    <div *ngIf="selectedWork?.links" class="block-links">
+                        <div class="link-item" *ngFor="let link of selectedWork?.links">
+                            <a href="link.url">{{ link.display}}</a>
+                        </div>
+                    </div>
+                    <div class="block-header"> Technologies
+                        <mat-chip-listbox >
+                            <mat-chip *ngFor="let tech of sortTech()">
+                                {{ tech }}    
+                            </mat-chip>
+                        </mat-chip-listbox >
+                    </div>
+                </div>
             </div>
         </div>
     </div>

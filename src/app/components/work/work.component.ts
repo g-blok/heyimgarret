@@ -13,7 +13,11 @@ export class WorkComponent {
 
   ngOnInit(): void {
     this.workList = WORK_LIST;
-    this.selectedWork = this.workList.find(work => work.selected);
+    this.selectedWork = this.workList?.find(work => work.selected);
+  }
+
+  public sortTech() {
+    return this.selectedWork?.technologies?.sort();
   }
 
   public selectWork(company: string): void {
