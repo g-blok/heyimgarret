@@ -1,60 +1,125 @@
 @import '../../../styles.scss';
 
 .work-container {
-    max-width: 60%;
+    width: 60%;
 
     .section-title {
         font-size: 1.5rem;
         font-weight: bold;
-        color: $white;
+        color: $forest;
     }
     
     .work-inner {
         display: flex;
         flex-direction: row;
+        width: 100%;
     }
     
     .work-tabs {
-        width: 20%;
+        min-width: 30%;
+        width: 30%;
         
         ul {
             gap: 2rem;
             list-style-type: none;
+
     
             li {
+                width: 100%;
                 padding: 1rem;
-                border-left: 10px solid $moss;
+                line-height: 1.5rem;
+                cursor: pointer;
             }
             li:hover {
                 background-color: $moss;
                 color: $forest;
+                font-weight: bold;
+                border-radius: 1rem;
             }
-            li:first-child {
-                border-left: 10px solid $tan;
-                background-color: $tan;
-                color: $forest;
+            
+            .selected {
+                color: $tan !important;
+                font-weight: bold;
             }
         }
     }
     
     .work-description {
-        padding: 1rem 4rem;
+        padding: 1rem 0 0 4rem;
     
         .desc-header {
             display: flex;
             flex-direction: row;
             align-items: center;
+            padding-top: 1rem;
+            padding-bottom: 0.5rem;
+            line-height: 1.5rem;
             
             .job-title {
                 font-size: 1.5rem;
-                padding-right: 0.5rem;
-                color: $white;
+                padding-right: 0;
+                color: $forest;
             }
 
             .company {
                 font-size: 1.5rem;
                 font-weight: bold;
                 color: $tan;
+                margin-left: 1rem;
+            }
+        }
+
+        .desc-dates {
+            font-size: 0.8rem;
+        }
+        .desc-body {
+
+            .text-block {
+                margin-top: 1rem;
+                padding-left: 2.5rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                .block-header {
+                    font-weight: bold;
+                }
+
+                .block-list {
+                    font-weight: normal;
+
+                    li {
+                        margin-top: 1rem;
+                    }
+                }
+
+                .block-links {
+                    display: flex;
+                    margin-bottom: 2rem;
+                    padding-left: 2.5rem;
+                    gap: 1.5rem;
+
+                    .link-item {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.1rem;
+
+                        a {
+                            color: $gray-medium-light;
+                            font-weight: bold;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+
+            .desc-list {
+                list-style-type: none;
+            }
+
+            .tech-chip-container {
+                display: flex;
+                gap: 1rem;
             }
         }
     }

@@ -10,13 +10,13 @@
     .section-title {
         font-size: 1.5rem;
         font-weight: bold;
-        color: $white;
         text-align: center;
     }
 
     .subtitle {
         font-size: 4rem;
         font-weight: bold;
+        color: $white;
         text-align: center;
     }
 
@@ -25,15 +25,14 @@
     }
 
     .cta {
-        margin-top: 2rem;
-        background-color: $lake;
-        border-radius: 20px;
-        padding: 1rem;
-        text-align: center;
+        margin: 2rem auto;
+        width: 10rem;
     
         a {
             font-weight: bold;
             color: white !important;
+            text-decoration: none !important; 
+
         }
     }
 }
