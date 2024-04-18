@@ -4,7 +4,7 @@ export const WORK_LIST = [
         displayName: 'QCells',
         jobTitle: 'UI Engineer',
         startDate: 'Jan 2021',
-        endDate: 'Current',
+        endDate: 'Now',
         selected: true,
         overview: 'Led the design and development of critical software solutions, including a utility-scale energy storage monitoring platform and various backend services.',
         achievements: [
@@ -20,8 +20,8 @@ export const WORK_LIST = [
         company: 'geli',
         displayName: 'Geli',
         jobTitle: 'Analytics Engineer',
-        startDate: 'Jan 2021',
-        endDate: 'Aug 2019',
+        startDate: 'Aug 2019',
+        endDate: 'Jan 2021',
         selected: false,
         overview: 'Spearheaded the development and analysis of Python-based tools for standardized deliverables and market entry strategies, enhancing regulatory compliance and market penetration.',
         achievements: [
@@ -47,8 +47,8 @@ export const WORK_LIST = [
         company: 'photon',
         displayName: 'Photon Brothers',
         jobTitle: 'Sales Engineer',
-        startDate: 'Aug 2019',
-        endDate: 'Feb 2017',
+        startDate: 'Feb 2017',
+        endDate: 'Aug 2019',
         selected: false,
         overview: 'Led the sales and analytics initiatives for commercial solar and energy storage systems, driving market expansion and optimizing customer solutions across California and Colorado.',
         achievements: [
@@ -65,8 +65,8 @@ export const WORK_LIST = [
         company: 'landmark',
         displayName: 'Landmark Irrigation',
         jobTitle: 'Irrigation Engineer',
-        startDate: 'Feb 2017',
-        endDate: 'Jun 2015',
+        startDate: 'Jun 2015',
+        endDate: 'Feb 2017',
         selected: false,
         overview: 'Executed advanced engineering designs and managed construction for large-scale hydraulic projects, focusing on optimizing fluid dynamics in various system configurations.',
         achievements: [
