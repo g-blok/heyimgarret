@@ -1,20 +1,17 @@
-# Use an official base image, e.g., Node for a Node.js application
-FROM node:14
-
-# Set the working directory in the container
-WORKDIR /usr/src/app
-
-# Copy package.json and package-lock.json
+# Stage 1: Build the Angular app using Node 18
+FROM node:18-alpine as build
+WORKDIR /app
 COPY package*.json ./
-
-# Install app dependencies
-RUN npm install
-
-# Bundle app source inside Docker image
+RUN npm ci
 COPY . .
+RUN npm run build --prod
 
-# Your app's port number
-EXPOSE 4200
+# Stage 2: Setup Nginx to serve the app
+FROM nginx:alpine
+COPY ./nginx-custom.conf /etc/nginx/nginx.conf
+COPY --from=build /app/dist/heyimgarret /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
 
-# Command to run your app
-CMD ["npm", "start"]
+# Build: docker build -t heyimgarret
+# Run: docker run -d -p 8080:80 heyimgarret 
