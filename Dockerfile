@@ -1,17 +1,16 @@
-# Stage 1: Build the Angular app using Node 18
-FROM node:18-alpine as build
+# Stage 1: Build the Angular application
+FROM node:18 as build-step
 WORKDIR /app
-COPY package*.json ./
-RUN npm ci
+COPY package.json ./
+RUN npm install
 COPY . .
-RUN npm run build --prod
+RUN npm run build
 
-# Stage 2: Setup Nginx to serve the app
+# Stage 2: Serve the app using Nginx
 FROM nginx:alpine
-COPY ./nginx-custom.conf /etc/nginx/nginx.conf
-COPY --from=build /app/dist/heyimgarret /usr/share/nginx/html
+COPY --from=build-step /app/dist/heyimgarret /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/nginx.conf
 EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
 
-# Build: docker build -t heyimgarret
-# Run: docker run -d -p 8080:80 heyimgarret 
+# Build: docker build -t heyimgarret .
+# Run: docker run -d -p 4200:80 heyimgarret 
