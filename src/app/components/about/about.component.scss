@@ -1,11 +1,103 @@
 @import '../../../styles.scss';
 
 .about-container {
-    max-width: 60%;
+    width: 100%;
+    padding: 2em 0 20rem 0;
+    display: flex;
+    justify-content: center;
+    background-color: $forest;
+    position: relative;
 
-    .section-title {
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: $white;
+    .about-content {
+        max-width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+
+        .wrapper {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+
+            .box {
+                width: 60%;
+                text-align: left;
+                justify-content: center;
+    
+                .title {
+                    padding: 4rem 0 2rem 0;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: $white;
+                }
+                .body-text {
+                    color: $tan;
+                }
+            }
+            .top-box {
+                justify-content: start;
+            }
+            
+            .middle-box {
+                justify-content: center;
+            }
+            
+            .bottom-box {
+                justify-content: flex-end;
+            }
+        }
+    }
+    .waves-footer {
+        position: absolute;
+        overflow: hidden;
+        left: 0;
+        bottom: 0;
+
+        .waves-image {
+            display: block;
+        }
+    }
+    .foley {
+        // display: flex;
+        height: 1000px;
+        width: 100%;
+        position: absolute;
+        overflow: hidden;
+
+        .foley-wrapper {
+            position: relative;
+
+            .arrow-foley {
+                position: absolute;
+                width: 100px;
+                left: 20%;
+                top: 400px;
+            }
+            .box-foley {
+                position: absolute;
+                width: 80px;
+                left: 20%;
+                top: 400px;
+            }
+            .mesh-foley {
+                position: absolute;
+                width: 80px;
+                left: 20%;
+                top: 400px;
+            }
+            .peas-foley {
+                position: absolute;
+                width: 120px;
+                right: 10%;
+                bottom: 0px;
+            }
+            .swqiggles-foley {
+                position: absolute;
+                width: 80px;
+                right: 20%;
+                top: 100px;
+            }
+        }
     }
 }
