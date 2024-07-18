@@ -1,6 +1,4 @@
-@import '../../../styles.scss';
-
-$footer-height: 150px;  
+@import '../../../styles.scss';  
 
 .hero-container {
     display: flex;
@@ -64,14 +62,13 @@ $footer-height: 150px;
     }
 }
 
-
-.flower-footer {
+.waves-footer {
     position: absolute;
     overflow: hidden;
+    left: 0;
     bottom: 0;
 
-    .flower-image {
-        height: $footer-height;
+    .waves-image {
         display: block;
     }
 }
