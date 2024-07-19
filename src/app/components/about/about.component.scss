@@ -2,7 +2,7 @@
 
 .about-container {
     width: 100%;
-    padding: 2em 0 20rem 0;
+    padding: 2rem 0 2rem 0;
     display: flex;
     justify-content: center;
     background-color: $forest;
@@ -48,16 +48,7 @@
             }
         }
     }
-    .waves-footer {
-        position: absolute;
-        overflow: hidden;
-        left: 0;
-        bottom: 0;
 
-        .waves-image {
-            display: block;
-        }
-    }
     .foley {
         // display: flex;
         height: 1000px;
