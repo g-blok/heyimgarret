@@ -1,5 +1,34 @@
 @import '../../../styles.scss';
 
+@keyframes rock {
+    0%, 100% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+}
+
+.foley-animation-1 {
+    animation: rock 2s infinite ease-in-out;
+}
+
+.foley-animation-2 {
+    animation: rock 3s infinite ease-in-out;
+}
+
+.foley-animation-3 {
+    animation: rock 4s infinite ease-in-out;
+}
+
+.foley-animation-4 {
+    animation: rock 5s infinite ease-in-out;
+}
+
+.foley-animation-5 {
+    animation: rock 6s infinite ease-in-out;
+}
+
 .about-container {
     width: 100%;
     padding: 2rem 0 2rem 0;
@@ -18,7 +47,7 @@
         .wrapper {
             display: flex;
             flex: 1;
-            justify-content: center;
+            // justify-content: center;
 
             .box {
                 width: 60%;
@@ -35,59 +64,64 @@
                     color: $tan;
                 }
             }
-            .top-box {
-                justify-content: start;
-            }
-            
-            .middle-box {
-                justify-content: center;
-            }
-            
-            .bottom-box {
-                justify-content: flex-end;
-            }
+        }
+        .top-box {
+            justify-content: start;
+        }
+        
+        .middle-box {
+            justify-content: center;
+        }
+        
+        .bottom-box {
+            justify-content: flex-end;
         }
     }
 
     .foley {
         // display: flex;
-        height: 1000px;
+        height: 100%;
         width: 100%;
         position: absolute;
         overflow: hidden;
 
         .foley-wrapper {
+            height: 100%;
             position: relative;
+            
+            img {
+                transform-origin: center;
+            }
 
             .arrow-foley {
                 position: absolute;
                 width: 100px;
-                left: 20%;
-                top: 400px;
+                right: 25%;
+                bottom: 40%;
             }
             .box-foley {
                 position: absolute;
-                width: 80px;
-                left: 20%;
-                top: 400px;
+                width: 160px;
+                left: 10%;
+                top: 20%;
             }
             .mesh-foley {
                 position: absolute;
-                width: 80px;
+                width: 120px;
                 left: 20%;
-                top: 400px;
+                bottom: 10%;
             }
             .peas-foley {
                 position: absolute;
                 width: 120px;
                 right: 10%;
-                bottom: 0px;
+                bottom: 10%;
             }
-            .swqiggles-foley {
+            .sqwiggles-foley {
                 position: absolute;
-                width: 80px;
+                width: 120px;
                 right: 20%;
-                top: 100px;
+                top: 10%;
             }
         }
     }
