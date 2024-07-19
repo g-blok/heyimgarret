@@ -49,3 +49,24 @@ html, body {
 button {
     font-family: inherit;
 }
+
+.waves-footer {
+    width: 100%;
+    overflow: hidden;
+    left: 0;
+    display: block;
+    box-sizing: border-box;
+
+    .waves-image-top {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .waves-image-bottom {
+        transform: rotate(180deg);
+        transform-origin: 50% 50%;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
