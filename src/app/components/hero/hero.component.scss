@@ -1,6 +1,4 @@
-@import '../../../styles.scss';
-
-$footer-height: 150px;  
+@import '../../../styles.scss';  
 
 .hero-container {
     display: flex;
@@ -8,10 +6,12 @@ $footer-height: 150px;
     align-items: center;
     height: calc(100vh - var(--footer-height));
     width: 60%;
-    max-width: 100%;
+    max-width: 1200px;
+    height: 100%;
     flex-direction: row;
     position: relative;
     padding: 5rem 0;
+    margin-bottom: 5rem;
 }
   
 .text-column {
@@ -42,6 +42,7 @@ $footer-height: 150px;
 .image-box {
     margin: auto;
     width: 400px;
+    min-width: 400px;
     height: 400px;
     max-width: 50%;
     max-height: 50vh;
@@ -55,24 +56,13 @@ $footer-height: 150px;
 
     .person-image {
         width: 400px;
+        min-width: 400px;
         height: 400px;
         position: absolute;
         left: -40px;
         top: -40px;
         object-fit: cover;
         border-radius: 50px;
-    }
-}
-
-
-.flower-footer {
-    position: absolute;
-    overflow: hidden;
-    bottom: 0;
-
-    .flower-image {
-        height: $footer-height;
-        display: block;
     }
 }
   

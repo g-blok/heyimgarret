@@ -1,6 +1,9 @@
 /* import Montserrat from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-  
+
+/* sizes */
+$footer-height: 150px;
+
 /* orange-purple */
 $mustard: #FFBB7C;
 $peach: #FFA477;
@@ -11,7 +14,7 @@ $eggplant: #66475B;
 
 /* green-blue */
 $beige: #FDFAF8;
-$tan: #CBA784;
+$tan: #D7BEAD;
 $bark: #6D553B;
 $veggie: #9D904E;
 $moss: #4A8164;
@@ -40,9 +43,30 @@ html {
 }
 html, body {
     height: 100%;
-    margin: 0.1rem;
+    margin: 0;
 }
 
 button {
     font-family: inherit;
+}
+
+.waves-footer {
+    width: 100%;
+    overflow: hidden;
+    left: 0;
+    display: block;
+    box-sizing: border-box;
+
+    .waves-image-top {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .waves-image-bottom {
+        transform: rotate(180deg);
+        transform-origin: 50% 50%;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
 }
