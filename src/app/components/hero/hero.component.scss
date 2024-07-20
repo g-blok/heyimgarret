@@ -21,17 +21,16 @@
 
     .title {
         font-size: 7rem;
-        background: linear-gradient(to right, #5DA17E, #223B2E);
-        -webkit-background-clip: text;
-        color: transparent;
+        cursor: default;
         margin: 0;
-        // line-height: 1.0;
-        line-height: 0.9;  // Adjust this value as needed
-        padding: 0.2em 0;  // Adjust the padding as needed
+        line-height: 0.9;
+        padding: 0.2em 0;
     }
+    
     
     .subtitle {
         font-size: 1.6rem;
+        cursor: default;
         color: $bark;
         display: block;
         line-height: 1.2;
