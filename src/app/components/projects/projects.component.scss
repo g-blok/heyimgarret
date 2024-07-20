@@ -1,7 +1,11 @@
 @import '../../../styles.scss';
 
 .projects-container {
-    max-width: 60%; 
+    width: 100%;
+    padding: 2rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+    background-color: $forest;
     
     .section-title {
         font-size: 1.5rem;
@@ -10,6 +14,41 @@
         margin-bottom: 4rem;
     }
     
+    .projects-content {
+        max-width: 60%;
+
+        .project-row {
+            display: flex;
+            gap: 2rem;
+            height: 12rem;
+            align-items: center;
+    
+            .project-title {
+                color: white;
+                font-size: 2rem;
+                font-weight: 900;
+                width: 10rem;
+            }
+    
+            .preview-box {
+                border: $moss solid 6px;
+                border-radius: 2rem;
+                height: 10rem;
+                width: 10rem;
+                overflow: hidden; /* Ensures the image fits within the border box */
+                display: flex; /* To center the image */
+                align-items: center; /* Vertically center the image */
+                justify-content: center;
+
+                .preview-image {
+                    max-height: 100%;
+                    max-width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
     .project {
         height: 16rem;
         display: flex;
