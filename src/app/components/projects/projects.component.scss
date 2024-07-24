@@ -22,31 +22,65 @@
             gap: 2rem;
             height: 12rem;
             align-items: center;
-    
+            border-radius: 4rem;
+            padding: 2rem;
+            position: relative;
+          
+            .overlay {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-color: $forest;
+              pointer-events: none;
+              opacity: 0.6;
+              transition: opacity 0.3s ease;
+              border-radius: 2rem;
+            }
+          
             .project-title {
-                color: white;
-                font-size: 2rem;
-                font-weight: 900;
-                width: 10rem;
+              color: white;
+              font-size: 2rem;
+              font-weight: 900;
+              width: 10rem;
             }
-    
+          
             .preview-box {
-                border: $moss solid 6px;
-                border-radius: 2rem;
-                height: 10rem;
-                width: 10rem;
-                overflow: hidden; /* Ensures the image fits within the border box */
-                display: flex; /* To center the image */
-                align-items: center; /* Vertically center the image */
-                justify-content: center;
-
-                .preview-image {
-                    max-height: 100%;
-                    max-width: 100%;
-                    object-fit: cover;
-                }
+              border: $moss solid 6px;
+              border-radius: 2rem;
+              height: 10rem;
+              width: 10rem;
+              overflow: hidden;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          
+              .preview-image {
+                max-height: 100%;
+                max-width: 100%;
+                object-fit: cover;
+                filter: grayscale(100%);
+                transition: filter 0.3s ease;
+              }
             }
-        }
+          
+            &:hover {
+              .overlay {
+                opacity: 0;
+              }
+          
+              .preview-image {
+                filter: grayscale(0%) !important;
+              }
+          
+              .project-title,
+              .preview-box {
+                position: relative;
+              }
+            }
+          }
+          
     }
 
     .project {
