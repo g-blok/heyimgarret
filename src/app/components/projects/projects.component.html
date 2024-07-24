@@ -3,11 +3,11 @@
         <div class="projects-array">
             <div *ngIf="projects">
                 <div *ngFor="let project of projects" class="project-row">
-                    <div class="overlay"></div>
-                    <div class="project-title">{{ project.displayName }}</div>
-                    <div *ngFor="let image of project.images" class="preview-box">
-                        <img class="preview-image" src="{{image}}" alt="project">
-                    </div>
+                  <div class="overlay"></div>
+                  <div class="project-title">{{ project.displayName }}</div>
+                  <div *ngFor="let image of project.images" class="preview-box">
+                    <img class="preview-image" src="{{image}}" alt="project">
+                  </div>
                 </div>
               </div>
         </div>
