@@ -1,27 +1,11 @@
 <div class="projects-container">
-    <div class="section-title">stuff i've done</div>
-    <div class="project">
-        <img class="project-image" src="../../../assets/camped_bw.png" alt="camped">
-        <div class="project-info">
-            <div class="info-header">
-                <div>Camped</div>
-            </div>
-            <div class="info-body">building a festival from the ground up. what started as a camping trip with friends has blossomed into ..</div>
-            <div class="info-links">
-                <a href="https://campedcollective.com" target="_blank">link</a>
-            </div>
-        </div>
-    </div>
-    <div class="project">
-        <img class="project-image" src="../../../assets/camped_bw.png" alt="camped">
-        <div class="project-info">
-            <div class="info-header">
-                <div>Camped</div>
-            </div>
-            <div class="info-body">building a festival from the ground up. what started as a camping trip with friends has blossomed into ..</div>
-            <div class="info-links">
-                <a href="https://campedcollective.com" target="_blank">link</a>
-            </div>
-        </div>
-    </div>
+	<div class="projects-array" *ngIf="projects">
+		<div *ngFor="let project of projects" class="project-item">
+			<div class="overlay"></div>
+			<div *ngFor="let image of project.images" class="preview-box">
+				<img class="preview-image" src="{{image}}" alt="project">
+			</div>
+			<div class="project-title">{{ project.displayName }}</div>
+		</div>
+	</div>
 </div>

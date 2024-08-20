@@ -1,7 +1,11 @@
 @import '../../../styles.scss';
 
 .projects-container {
-    max-width: 60%; 
+    width: 100%;
+    padding: 2rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+    background-color: $forest;
     
     .section-title {
         font-size: 1.5rem;
@@ -9,38 +13,97 @@
         color: $white;
         margin-bottom: 4rem;
     }
-    
-    .project {
-        height: 16rem;
-        display: flex;
-        justify-content: space-between;
-    
-        .project-image {
-            max-width: 200px;
-            max-height: 200px;
-        }
-    
-        .project-info {
-    
-            .info-header {
-                text-align: end;
-                padding: 0 1rem 1rem 0;
-                color: white;
-            }
-    
-            .info-body {
-                text-align: end;
-                padding: 2rem;
-                border-radius: 1rem;
-                background-color: $moss;
-                color: black;
-            }
-    
-            .info-links {
-                text-align: end;
-                padding: 1rem 1rem 0 0;
-                color: white;
-            }
-        }
-    }
+
+	.projects-array {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 60%;
+		max-width: 60%;
+
+		.project-item {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 2rem;
+			align-items: center;
+			justify-content: center;
+			border-radius: 4rem;
+			position: relative;
+			margin: 2rem 0rem 2rem 0rem;
+			width: 50%;
+		
+			.overlay {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: $forest;
+				pointer-events: none;
+				opacity: 0.6;
+				transition: opacity 0.3s ease-in-out;
+				border-radius: 2rem;
+			}
+		
+			.project-title {
+				margin-top: 3rem;
+				margin-left: 3rem;
+				color: white;
+				font-size: 2rem;
+				font-weight: 900;
+				width: 10rem;
+				max-width: 10rem;
+				opacity: 0;
+				transition: opacity 0.3s ease-in-out;
+				text-align: center;
+			}
+		
+			.preview-box {
+				position: relative;
+				border: $moss solid 10px;
+				border-radius: 3rem;
+				height: 16rem;
+				width: 16rem;
+				overflow: visible;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			
+				.preview-image {
+					border-radius: 3rem;
+					position: absolute;
+					top: 2rem;
+					left: 2rem;
+					max-height: 100%;
+					max-width: 100%;
+					object-fit: cover;
+					filter: grayscale(100%);
+					transition: filter 0.3s ease-in-out;
+				}
+			}
+		
+			&:hover {
+
+			.overlay {
+				opacity: 0;
+			}
+
+			.project-title {
+				opacity: 1;
+			}
+
+			.preview-image {
+				filter: grayscale(0%) !important;
+				top: 3rem;
+				left: 3rem;
+			}
+		
+			.project-title,
+				.preview-box {
+					position: relative;
+				}
+			}
+		}
+	}
 }
