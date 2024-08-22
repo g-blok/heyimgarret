@@ -1,10 +1,22 @@
 @import '../../../styles.scss';
 
 .footer-container {
+    display: flex;
+    align-items: center;
     max-width: 60%;
+    padding-top: 6rem;
+    vertical-align: center;
+    gap: 0.5rem;
 
-    p {
+    span {
         font-size: 0.75rem;
         color: $tan;
+    }
+
+    mat-icon {
+        font-size: 0.75rem;
+        color: $moss;
+        height: 0.75rem;
+        width: 0.75rem;
     }
 }

@@ -1,7 +1,36 @@
 <div class="contact-container">
-    <h1 class="section-title">what's next?</h1>
-    <div class="subtitle">get in touch</div>
-    <div class="body-text">i'm really really really cool. promise.</div>
-    <button mat-raised-button color="primary" class="cta"><a routerLink="/contact">contact</a></button>
+    <div class="signature">
+        <mat-icon aria-hidden="false" aria-label="Copyright icon" fontIcon="copyright"></mat-icon>
+        <span class="date">2024</span>
+        <span class="name">garret blocher</span>
+        <div class="dot-divider"></div>
+        <div class="app-desc" (mouseenter)="showPopup()" (mouseleave)="hidePopup()">this app
+            <technology-popup *ngIf="isPopupVisible"></technology-popup>
+        </div>
+    </div>
+    <div class="link-section">
+        <div class="places-links">
+            <div class="links-header">places</div>
+            <ul class="links-list">
+                <li>
+                    <a class="link-text" target="_blank" href="https://dribbble.com/heyimgarret">dribbble</a>
+                </li>
+                <li>
+                    <a class="link-text" target="_blank" href="https://www.figma.com/@garretblocher">figma</a>
+                </li>
+                <li>
+                    <a class="link-text" target="_blank" href="https://github.com/g-blok">github</a>
+                </li>
+            </ul>
+        </div>
+        <div class="contact-links">
+            <div class="links-header">contact</div>
+            <ul class="links-list">
+                <li>
+                    <a class="link-text" target="_blank" href="">message</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
   

@@ -1,0 +1,63 @@
+@import '../../../styles.scss';
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+.popup {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: -15rem;
+    left: 0;
+    height: 14rem;
+    background-color: rgba(253, 250, 248, 0.9);
+    border-radius: 1rem;
+    z-index: 1000;
+    font-size: 14px;
+    color: $forest;
+    border: $tan solid 1px;
+
+    .card-container {
+      display: flex;
+      align-items: center;
+      padding-left: 1rem;
+
+      ul {
+        // opacity: 0;
+        padding: 1rem;
+        list-style: none;
+        width: 16rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        li {
+          display: flex;
+          gap: 0.5rem;
+          align-items: center;
+
+          img {
+            height: 1.5rem;
+            fill: $moss;
+
+            path {
+              fill: $moss;
+            }
+          }
+        }
+      }
+
+      .frontend-desc {
+        padding: 2rem;
+        line-height: 2rem;
+        width: 10rem;
+        font-weight: normal;
+
+        mat-icon {
+          color: $moss;
+        }
+      }
+    }
+  }

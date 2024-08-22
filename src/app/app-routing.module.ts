@@ -15,10 +15,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'work', component: WorkComponent },
   { path: 'projects', component: ProjectsComponent },
-  { path: 'adventures', component: AdventuresComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'footer', component: FooterComponent },
-  // Add any other routes you need here
 ];
 
 

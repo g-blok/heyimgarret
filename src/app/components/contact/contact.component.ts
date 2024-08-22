@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
+  isPopupVisible: boolean = false;
 
+  showPopup() {
+    this.isPopupVisible = true;
+  }
+
+  hidePopup() {
+    this.isPopupVisible = false;
+  }
 }
