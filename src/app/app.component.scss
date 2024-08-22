@@ -1,5 +1,12 @@
 @import '../styles.scss';
 
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
 main {
     display: flex;
     flex-direction: column;

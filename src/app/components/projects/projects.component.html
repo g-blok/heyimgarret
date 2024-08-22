@@ -1,9 +1,9 @@
 <div class="projects-container">
 	<div class="projects-array" *ngIf="projects">
-		<div *ngFor="let project of projects" class="project-item">
-			<div class="overlay"></div>
+		<div *ngFor="let project of projects" class="project-item" (click)="goToProjectPage(project.link)">
 			<div *ngFor="let image of project.images" class="preview-box">
 				<img class="preview-image" src="{{image}}" alt="project">
+				<div class="overlay"></div>
 			</div>
 			<div class="project-title">{{ project.displayName }}</div>
 		</div>
