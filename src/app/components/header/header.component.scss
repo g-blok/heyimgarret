@@ -2,7 +2,6 @@
 
 /* Header Container */
 header {
-    background-color: $beige;
     color: $forest;
     padding: 10px 20px;
     display: flex;
@@ -23,9 +22,11 @@ ul {
     padding: 0;
 
     li {
+        background-color: rgba(253, 250, 248, 0.9);
+        border-radius: 2rem;
         display: inline;
-        padding: 20px;
-        margin: 20px;
+        padding: 1rem 2rem;
+        margin: 1rem;
 
         a {
             text-decoration: none;
@@ -37,7 +38,7 @@ ul {
 }
 
 .cta {
-    background-color: $forest;
+    background-color: $moss !important;
     border-radius: 20px;
 
     a {
