@@ -1,73 +1,74 @@
 /* import Montserrat from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 /* sizes */
 $footer-height: 150px;
 
 /* orange-purple */
-$mustard: #FFBB7C;
-$peach: #FFA477;
-$orange: #ED7855;
-$brick: #B85C4F;
-$mauve: #AC6D7E;
-$eggplant: #66475B;
+$mustard: #ffbb7c;
+$peach: #ffa477;
+$orange: #ed7855;
+$brick: #b85c4f;
+$mauve: #ac6d7e;
+$eggplant: #66475b;
 
 /* green-blue */
-$beige: #FDFAF8;
-$tan: #D7BEAD;
-$bark: #6D553B;
-$veggie: #9D904E;
-$moss: #4A8164;
-$forest: #223B2E;
-$lake: #1E4177;
-$sky: #9CA6CB;
+$beige: #fdfaf8;
+$tan: #d7bead;
+$bark: #6d553b;
+$veggie: #9d904e;
+$moss: #4a8164;
+$forest: #223b2e;
+$lake: #1e4177;
+$sky: #9ca6cb;
 
 /* grays */
-$gray-dark: #312C29;
-$gray-medium-darker: #3B3732;
-$gray-medium-dark: #48433E;
-$gray-medium: #5C5651;
-$gray-medium-light: #7F7871;
-$gray-medium-lighter: #B4AEA8;
-$gray-light: #F2F1EC;
+$gray-dark: #312c29;
+$gray-medium-darker: #3b3732;
+$gray-medium-dark: #48433e;
+$gray-medium: #5c5651;
+$gray-medium-light: #7f7871;
+$gray-medium-lighter: #b4aea8;
+$gray-light: #f2f1ec;
 
-$white: #FFF;
+$white: #fff;
 $black: #000;
 
 /* global font family assignment */
 html {
-    background-color: $beige;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1em !important;
-    color: $gray-medium;
+  background-color: $beige;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em !important;
+  color: $gray-medium;
 }
-html, body {
-    height: 100%;
-    margin: 0;
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 
 button {
-    font-family: inherit;
+  font-family: inherit;
 }
 
 .waves-footer {
-    width: 100%;
-    overflow: hidden;
-    left: 0;
-    display: block;
-    box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+  left: 0;
+  display: block;
+  box-sizing: border-box;
 
-    .waves-image-top {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-    .waves-image-bottom {
-        transform: rotate(180deg);
-        transform-origin: 50% 50%;
-        width: 100%;
-        height: auto;
-        display: block;
-        margin-top: -1rem;
-    }
+  .waves-image-top {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .waves-image-bottom {
+    transform: rotate(180deg);
+    transform-origin: 50% 50%;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: -1rem;
+  }
 }

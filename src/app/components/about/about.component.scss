@@ -1,128 +1,151 @@
-@import '../../../styles.scss';
+@import "../../../styles.scss";
 
 @keyframes rock {
-    0%, 100% {
-        transform: rotate(-5deg);
-    }
-    50% {
-        transform: rotate(5deg);
-    }
+  0%,
+  100% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
 }
 
 .foley-animation-1 {
-    animation: rock 2s infinite ease-in-out;
+  animation: rock 2s infinite ease-in-out;
 }
 
 .foley-animation-2 {
-    animation: rock 3s infinite ease-in-out;
+  animation: rock 3s infinite ease-in-out;
 }
 
 .foley-animation-3 {
-    animation: rock 4s infinite ease-in-out;
+  animation: rock 4s infinite ease-in-out;
 }
 
 .foley-animation-4 {
-    animation: rock 5s infinite ease-in-out;
+  animation: rock 5s infinite ease-in-out;
 }
 
 .foley-animation-5 {
-    animation: rock 6s infinite ease-in-out;
+  animation: rock 6s infinite ease-in-out;
 }
 
 .about-container {
+  width: 100%;
+  min-width: 320px; // Add a minimum width
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: $forest;
+  position: relative;
+  overflow: hidden;
+
+  .about-content {
     width: 100%;
-    padding: 2rem 0 2rem 0;
+    max-width: 1200px;
     display: flex;
-    justify-content: center;
-    background-color: $forest;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
+    padding: 2rem;
+
+    .wrapper {
+      display: flex;
+      flex: 1;
+      justify-content: flex-start;
+      margin-bottom: 2rem;
+
+      .box {
+        width: 100%;
+        text-align: left;
+
+        .title {
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: $white;
+        }
+        .body-text {
+          color: $tan;
+        }
+      }
+    }
+  }
+
+  .foley {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+
+    .foley-wrapper {
+      height: 100%;
+      position: relative;
+
+      img {
+        transform-origin: center;
+      }
+
+      .arrow-foley {
+        position: absolute;
+        width: 100px;
+        right: 25%;
+        bottom: 40%;
+      }
+      .box-foley {
+        position: absolute;
+        width: 160px;
+        left: 10%;
+        top: 20%;
+      }
+      .mesh-foley {
+        position: absolute;
+        width: 120px;
+        left: 20%;
+        bottom: 10%;
+      }
+      .peas-foley {
+        position: absolute;
+        width: 120px;
+        right: 10%;
+        bottom: 10%;
+      }
+      .sqwiggles-foley {
+        position: absolute;
+        width: 120px;
+        right: 20%;
+        top: 10%;
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .about-container {
+    .about-content {
+      padding: 1rem; // Reduce padding on very small screens
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .about-container {
+    .foley {
+      display: block;
+    }
 
     .about-content {
-        max-width: 60%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        position: relative;
-
-        .wrapper {
-            display: flex;
-            flex: 1;
-            // justify-content: center;
-
-            .box {
-                width: 60%;
-                text-align: left;
-                justify-content: center;
-    
-                .title {
-                    padding: 4rem 0 2rem 0;
-                    font-size: 1.5rem;
-                    font-weight: bold;
-                    color: $white;
-                }
-                .body-text {
-                    color: $tan;
-                }
-            }
+      .wrapper {
+        .box {
+          width: 60%;
         }
-        .top-box {
-            justify-content: start;
-        }
-        
-        .middle-box {
-            justify-content: center;
-        }
-        
-        .bottom-box {
-            justify-content: flex-end;
-        }
+      }
+      .wrapper:nth-child(2) {
+        justify-content: center;
+      }
+      .wrapper:nth-child(3) {
+        justify-content: flex-end;
+      }
     }
-
-    .foley {
-        // display: flex;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        overflow: hidden;
-
-        .foley-wrapper {
-            height: 100%;
-            position: relative;
-            
-            img {
-                transform-origin: center;
-            }
-
-            .arrow-foley {
-                position: absolute;
-                width: 100px;
-                right: 25%;
-                bottom: 40%;
-            }
-            .box-foley {
-                position: absolute;
-                width: 160px;
-                left: 10%;
-                top: 20%;
-            }
-            .mesh-foley {
-                position: absolute;
-                width: 120px;
-                left: 20%;
-                bottom: 10%;
-            }
-            .peas-foley {
-                position: absolute;
-                width: 120px;
-                right: 10%;
-                bottom: 10%;
-            }
-            .sqwiggles-foley {
-                position: absolute;
-                width: 120px;
-                right: 20%;
-                top: 10%;
-            }
-        }
-    }
+  }
 }
