@@ -1,28 +1,73 @@
-import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  HostListener,
+  OnInit,
+  ViewChild,
+  AfterViewInit,
+  Renderer2,
+} from '@angular/core';
 
 @Component({
   selector: 'hero-component',
   templateUrl: './hero.component.html',
-  styleUrls: ['./hero.component.scss']
+  styleUrls: ['./hero.component.scss'],
 })
-export class HeroComponent implements OnInit {
-  @ViewChild('title') titleElement?: ElementRef;
+export class HeroComponent implements OnInit, AfterViewInit {
+  @ViewChild('titleGradient') titleGradientElement?: ElementRef;
+  isMobile: boolean = false;
 
-  ngOnInit() {}
+  constructor(private renderer: Renderer2) {}
+
+  ngOnInit() {
+    this.checkIfMobile();
+  }
+
+  ngAfterViewInit() {
+    this.setDefaultGradient();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.checkIfMobile();
+    this.setDefaultGradient();
+  }
+
+  checkIfMobile() {
+    this.isMobile = window.innerWidth <= 768;
+  }
+
+  setDefaultGradient() {
+    if (this.titleGradientElement) {
+      const gradient = this.isMobile
+        ? 'linear-gradient(45deg, #5DA17E, #223B2E, #5DA17E)'
+        : 'linear-gradient(to right, #5DA17E, #223B2E, #5DA17E)';
+
+      this.applyGradient(gradient);
+    }
+  }
 
   @HostListener('document:mousemove', ['$event'])
   onMouseMove(event: MouseEvent) {
-    if (this.titleElement) {
-      const rect = this.titleElement.nativeElement.getBoundingClientRect();
+    if (this.titleGradientElement && !this.isMobile) {
+      const rect =
+        this.titleGradientElement.nativeElement.getBoundingClientRect();
       const x = event.clientX - rect.left;
       const y = event.clientY - rect.top;
 
-      const gradient = `linear-gradient(to right, #5DA17E, #223B2E ${x}px, #5DA17E)`;
+      const gradient = `radial-gradient(circle at ${x}px ${y}px, #5DA17E, #223B2E)`;
 
-      this.titleElement.nativeElement.style.background = gradient;
-      this.titleElement.nativeElement.style.backgroundClip = 'text';
-      this.titleElement.nativeElement.style.webkitBackgroundClip = 'text';
-      this.titleElement.nativeElement.style.color = 'transparent';
+      this.applyGradient(gradient);
+    }
+  }
+
+  private applyGradient(gradient: string) {
+    if (this.titleGradientElement) {
+      const element = this.titleGradientElement.nativeElement;
+      this.renderer.setStyle(element, 'background', gradient);
+      this.renderer.setStyle(element, 'backgroundClip', 'text');
+      this.renderer.setStyle(element, '-webkit-background-clip', 'text');
+      this.renderer.setStyle(element, 'color', 'transparent');
     }
   }
 }
