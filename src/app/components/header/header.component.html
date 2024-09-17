@@ -1,14 +1,34 @@
 <header>
-    <div class="logo">
-        <a routerLink=""><img src="../assets/logo.svg" alt="g"></a>
-    </div>
-    <nav class="">
-        <ul>
-            <li><a routerLink="/about" fragment="about">about</a></li>
-            <li><a routerLink="/work" fragment="work">work</a></li>
-            <li><a routerLink="/projects" fragment="projects">projects</a></li>
-            <li class="cta"><a routerLink="/contact" fragment="contact">contact</a></li>
-        </ul>
+  <div class="logo">
+    <a routerLink=""><img src="../assets/logo.svg" alt="g" /></a>
+  </div>
+  <button class="hamburger" (click)="toggleMenu()" [class.active]="isMenuOpen">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <div class="menu-overlay" [class.active]="isMenuOpen">
+    <nav>
+      <ul>
+        <li>
+          <a routerLink="/about" fragment="about" (click)="toggleMenu()"
+            >about</a
+          >
+        </li>
+        <li>
+          <a routerLink="/work" fragment="work" (click)="toggleMenu()">work</a>
+        </li>
+        <li>
+          <a routerLink="/projects" fragment="projects" (click)="toggleMenu()"
+            >projects</a
+          >
+        </li>
+        <li class="cta">
+          <a routerLink="/contact" fragment="contact" (click)="toggleMenu()"
+            >contact</a
+          >
+        </li>
+      </ul>
     </nav>
+  </div>
 </header>
-  
