@@ -10,6 +10,9 @@ header {
   flex-direction: row;
   position: relative;
   z-index: 1000;
+  background-color: rgba(253, 250, 248, 0.6);
+  border-radius: 0.5rem;
+  margin: 1rem;
 }
 
 .logo {
@@ -29,8 +32,6 @@ header {
   cursor: pointer;
   padding: 1rem;
   z-index: 1001;
-  background-color: rgba(253, 250, 248, 0.6);
-  border-radius: 0.5rem;
 
   span {
     width: 2rem;
