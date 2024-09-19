@@ -1,20 +1,26 @@
-@import '../styles.scss';
+@import "../styles.scss";
 
 header {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 10;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 6rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6rem 0;
+  width: 100%;
 
-    .section {
-        display: flex;
-        justify-content: center;
-    }
+  @media (max-width: 768px) {
+    padding: 4rem 0;
+  }
+
+  .section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 }

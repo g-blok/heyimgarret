@@ -16,6 +16,7 @@ import { HeroComponent } from './components/hero/hero.component';
 import { WorkComponent } from './components/work/work.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TechnologyPopupComponent } from './components/technology-popup/technology-popup.component';
+import { ProjectService } from './services/project.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { TechnologyPopupComponent } from './components/technology-popup/technolo
     HeroComponent,
     WorkComponent,
     FooterComponent,
-    TechnologyPopupComponent
+    TechnologyPopupComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +39,7 @@ import { TechnologyPopupComponent } from './components/technology-popup/technolo
     MatIconModule,
     BrowserAnimationsModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [ProjectService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

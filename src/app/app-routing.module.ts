@@ -7,7 +7,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { WorkComponent } from './components/work/work.component';
 import { FooterComponent } from './components/footer/footer.component';
-
+import { ProjectDetailComponent } from './components/project-detail/projectDetail.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/hero', pathMatch: 'full' },
@@ -16,11 +16,16 @@ const routes: Routes = [
   { path: 'work', component: WorkComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'projects/:id', component: ProjectDetailComponent },
 ];
 
-
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled' })],
-  exports: [RouterModule]
+  imports: [
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'enabled',
+      anchorScrolling: 'enabled',
+    }),
+  ],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
