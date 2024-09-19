@@ -44,6 +44,7 @@ html {
 html,
 body {
   height: 100%;
+  width: 100%;
   margin: 0;
 }
 
@@ -57,18 +58,25 @@ button {
   left: 0;
   display: block;
   box-sizing: border-box;
+  position: relative;
 
-  .waves-image-top {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+  .waves-image-top,
   .waves-image-bottom {
-    transform: rotate(180deg);
-    transform-origin: 50% 50%;
     width: 100%;
+    min-width: 1200px; // Adjust this value as needed
     height: auto;
     display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .waves-image-bottom {
+    transform: translateX(-50%) rotate(180deg);
     margin-top: -1rem;
   }
 }
+
+// * {
+//   outline: 1px solid red;
+// }
