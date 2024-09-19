@@ -10,7 +10,6 @@ header {
   flex-direction: row;
   position: relative;
   z-index: 1000;
-  background-color: rgba(253, 250, 248, 0.6);
   border-radius: 0.5rem;
   margin: 1rem;
 }
@@ -32,6 +31,8 @@ header {
   cursor: pointer;
   padding: 1rem;
   z-index: 1001;
+  background-color: rgba(253, 250, 248, 0.6);
+  border-radius: 0.5rem;
 
   span {
     width: 2rem;
@@ -86,7 +87,7 @@ header {
 
       li {
         border-radius: 2rem;
-        padding: 1rem 2rem;
+        padding: 1rem 0;
         margin: 1rem;
 
         a {
@@ -95,6 +96,7 @@ header {
           font-weight: light;
           color: $forest;
           transition: color 0.3s ease;
+          padding: 1rem 2rem;
 
           &:hover {
             color: $moss;
@@ -105,7 +107,6 @@ header {
           a {
             background-color: $moss;
             color: white;
-            padding: 1rem 2rem;
             border-radius: 2rem;
             font-weight: bold;
 
