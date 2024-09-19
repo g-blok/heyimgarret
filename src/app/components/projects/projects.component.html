@@ -1,11 +1,18 @@
-<div class="projects-container">
-	<div class="projects-array" *ngIf="projects">
-		<div *ngFor="let project of projects" class="project-item" (click)="goToProjectPage(project.link)">
-			<div *ngFor="let image of project.images" class="preview-box">
-				<img class="preview-image" src="{{image}}" alt="project">
-				<div class="overlay"></div>
-			</div>
-			<div class="project-title">{{ project.displayName }}</div>
-		</div>
-	</div>
-</div>
+<section class="projects-section">
+  <h2 class="section-title">My Projects</h2>
+  <div class="projects-grid">
+    <div
+      *ngFor="let project of projects"
+      class="project-card"
+      (click)="goToProjectPage(project.link)"
+    >
+      <div class="project-image">
+        <img [src]="project.images[0]" [alt]="project.displayName" />
+      </div>
+      <div class="project-info">
+        <h3 class="project-title">{{ project.displayName }}</h3>
+        <p class="project-description">{{ project.overview }}</p>
+      </div>
+    </div>
+  </div>
+</section>
