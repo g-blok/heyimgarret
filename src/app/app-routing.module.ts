@@ -10,13 +10,13 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ProjectDetailComponent } from './components/project-detail/projectDetail.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/hero', pathMatch: 'full' },
-  { path: 'hero', component: HeroComponent },
+  { path: '', component: HeroComponent },
   { path: 'about', component: AboutComponent },
   { path: 'work', component: WorkComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'projects/:id', component: ProjectDetailComponent },
+  { path: '**', redirectTo: '' }, // Wildcard for unknown routes
 ];
 
 @NgModule({

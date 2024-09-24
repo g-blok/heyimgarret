@@ -2,7 +2,7 @@
   <app-header></app-header>
 </header>
 
-<main>
+<main *ngIf="isMainPage">
   <hero-component id="hero" class="section"></hero-component>
   <div class="waves-footer">
     <img src="../assets/waves-forest.svg" alt="" class="waves-image-top" />
@@ -22,3 +22,5 @@
   <contact-component id="contact" class="section"></contact-component>
   <footer-component class="section"></footer-component>
 </main>
+
+<router-outlet></router-outlet>
