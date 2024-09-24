@@ -2,55 +2,6 @@ import { Project } from '../models/project.model';
 
 export const PROJECTS_LIST: Project[] = [
   {
-    id: 'sea-quill',
-    displayName: 'Sea Quill',
-    link: 'sea-quill',
-    images: ['assets/projects/sea_quill.png'],
-    subtitle: 'A tranquil writing app inspired by the ocean',
-    heroImage: 'assets/sea-quill-hero.jpg',
-    overview:
-      'Sea Quill is a minimalist writing application that aims to provide a serene and distraction-free environment for writers, inspired by the calming essence of the ocean.',
-    challenge:
-      'Create a writing app that not only offers a clean interface but also incorporates elements of the sea to enhance focus and creativity.',
-    solution:
-      'We designed an intuitive, ocean-themed interface with subtle animations and soothing color schemes to create a unique writing experience.',
-    designProcess: [
-      {
-        title: 'Research & Inspiration',
-        description:
-          'We studied various writing apps and ocean-related designs to find the perfect balance between functionality and aesthetics.',
-        image: 'assets/sea-quill-research.jpg',
-      },
-      {
-        title: 'Wireframing',
-        description:
-          'Created low-fidelity wireframes to establish the basic layout and user flow of the application.',
-        image: 'assets/sea-quill-wireframe.jpg',
-      },
-      {
-        title: 'Visual Design',
-        description:
-          'Developed a cohesive visual language using a calming blue color palette and wave-inspired elements.',
-        image: 'assets/sea-quill-visual-design.jpg',
-      },
-      {
-        title: 'Prototyping & Testing',
-        description:
-          'Built interactive prototypes and conducted user testing to refine the design and functionality.',
-        image: 'assets/sea-quill-prototype.jpg',
-      },
-    ],
-    results:
-      'Sea Quill has been well-received by writers and has garnered positive feedback for its unique design and focus-enhancing features.',
-    technologies: [
-      'Angular',
-      'TypeScript',
-      'SCSS',
-      'Figma',
-      'Adobe Creative Suite',
-    ],
-  },
-  {
     id: 'camped',
     displayName: 'Camped Collective',
     link: 'camped',
@@ -198,6 +149,55 @@ export const PROJECTS_LIST: Project[] = [
       'MongoDB',
       'Spotify API',
       'SoundCloud API',
+    ],
+  },
+  {
+    id: 'sea-quill',
+    displayName: 'Sea Quill',
+    link: 'sea-quill',
+    images: ['assets/projects/sea_quill.png'],
+    subtitle: 'A tranquil writing app inspired by the ocean',
+    heroImage: 'assets/sea-quill-hero.jpg',
+    overview:
+      'Sea Quill is a minimalist writing application that aims to provide a serene and distraction-free environment for writers, inspired by the calming essence of the ocean.',
+    challenge:
+      'Create a writing app that not only offers a clean interface but also incorporates elements of the sea to enhance focus and creativity.',
+    solution:
+      'We designed an intuitive, ocean-themed interface with subtle animations and soothing color schemes to create a unique writing experience.',
+    designProcess: [
+      {
+        title: 'Research & Inspiration',
+        description:
+          'We studied various writing apps and ocean-related designs to find the perfect balance between functionality and aesthetics.',
+        image: 'assets/sea-quill-research.jpg',
+      },
+      {
+        title: 'Wireframing',
+        description:
+          'Created low-fidelity wireframes to establish the basic layout and user flow of the application.',
+        image: 'assets/sea-quill-wireframe.jpg',
+      },
+      {
+        title: 'Visual Design',
+        description:
+          'Developed a cohesive visual language using a calming blue color palette and wave-inspired elements.',
+        image: 'assets/sea-quill-visual-design.jpg',
+      },
+      {
+        title: 'Prototyping & Testing',
+        description:
+          'Built interactive prototypes and conducted user testing to refine the design and functionality.',
+        image: 'assets/sea-quill-prototype.jpg',
+      },
+    ],
+    results:
+      'Sea Quill has been well-received by writers and has garnered positive feedback for its unique design and focus-enhancing features.',
+    technologies: [
+      'Angular',
+      'TypeScript',
+      'SCSS',
+      'Figma',
+      'Adobe Creative Suite',
     ],
   },
 ];

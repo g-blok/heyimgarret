@@ -1,0 +1,85 @@
+<div class="project-detail">
+  <main>
+    <div class="waves-footer">
+      <img src="../assets/waves-forest.svg" alt="" class="waves-image-top" />
+    </div>
+
+    <section class="hero">
+      <h1>{{ project?.displayName }}</h1>
+      <p class="subtitle">{{ project?.subtitle }}</p>
+      <img
+        [src]="project?.heroImage"
+        alt="{{ project?.displayName }} hero image"
+        class="hero-image"
+      />
+    </section>
+    <div class="waves-footer">
+      <img src="../assets/waves-forest.svg" alt="" class="waves-image-bottom" />
+    </div>
+
+    <section class="overview">
+      <h2>Project Overview</h2>
+      <p>{{ project?.overview }}</p>
+    </section>
+
+    <div class="waves-footer">
+      <img src="../assets/waves-forest.svg" alt="" class="waves-image-top" />
+    </div>
+    <section class="challenge">
+      <h2>The Challenge</h2>
+      <p>{{ project?.challenge }}</p>
+    </section>
+
+    <div class="waves-footer">
+      <img src="../assets/waves-forest.svg" alt="" class="waves-image-bottom" />
+    </div>
+    <section class="solution">
+      <h2>The Solution</h2>
+      <p>{{ project?.solution }}</p>
+    </section>
+
+    <div class="waves-footer">
+      <img src="../assets/waves-forest.svg" alt="" class="waves-image-top" />
+    </div>
+    <section class="design-process">
+      <h2>Design Process</h2>
+      <div class="process-steps">
+        <div *ngFor="let step of project.designProcess" class="process-step">
+          <h3>{{ step.title }}</h3>
+          <p>{{ step.description }}</p>
+          <img *ngIf="step.image" [src]="step.image" [alt]="step.title" />
+        </div>
+      </div>
+    </section>
+
+    <div class="waves-footer">
+      <img src="../assets/waves-forest.svg" alt="" class="waves-image-bottom" />
+    </div>
+
+    <section class="results">
+      <h2>Results</h2>
+      <p>{{ project?.results }}</p>
+    </section>
+
+    <div class="waves-footer">
+      <img src="../assets/waves-forest.svg" alt="" class="waves-image-top" />
+    </div>
+    <section class="technologies">
+      <h2>Technologies Used</h2>
+      <ul>
+        <li *ngFor="let tech of project?.technologies">{{ tech }}</li>
+      </ul>
+    </section>
+
+    <section class="gallery">
+      <h2>Project Gallery</h2>
+      <div class="image-grid">
+        <img
+          *ngFor="let image of project?.images"
+          [src]="image"
+          alt="Project image"
+        />
+      </div>
+    </section>
+  </main>
+</div>
