@@ -1,47 +1,51 @@
 <div class="work-container">
-    <div class="section-title">work</div>
-    <div class="work-inner">
-        <div class="work-tabs">
-            <ul class="work-list">
-                <li
-                    *ngFor="let work of workList"
-                    [ngClass]="{'selected': work.selected }"
-                    (click)="selectWork(work.company)"
-                >
-                    {{ work.displayName }}
-                </li>
-            </ul>
-        </div>
-        <div class="work-description">
-            <div class="desc-header">
-                <div class="job-title">{{ selectedWork?.jobTitle }}</div>
-                <div class="company">@{{ selectedWork?.displayName }}</div>
-            </div>
-            <div class="desc-dates">{{ selectedWork?.startDate }} through {{ selectedWork?.endDate }} </div>
-            <div class="desc-body">
-                <div class="text-block">
-                    <div> {{ selectedWork?.overview }} </div>
-                    <div class="block-header"> Key Achievements
-                        <ul class="block-list">
-                            <li *ngFor="let achievement of selectedWork?.achievements">
-                                {{ achievement }}    
-                            </li>
-                        </ul>
-                    </div>
-                    <div *ngIf="selectedWork?.links" class="block-links">
-                        <div class="link-item" *ngFor="let link of selectedWork?.links">
-                            <a href="link.url">{{ link.display}}</a>
-                        </div>
-                    </div>
-                    <div class="block-header"> Technologies
-                        <mat-chip-listbox >
-                            <mat-chip *ngFor="let tech of sortTech()">
-                                {{ tech }}    
-                            </mat-chip>
-                        </mat-chip-listbox >
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="section-title">work</div>
+  <div class="work-inner">
+    <div class="work-tabs">
+      <ul class="work-list">
+        <li
+          *ngFor="let work of workList"
+          [ngClass]="{ selected: work.selected }"
+          (click)="selectWork(work.company)"
+        >
+          {{ work.displayName }}
+        </li>
+      </ul>
     </div>
+    <div class="work-description">
+      <div class="desc-header">
+        <div class="job-title">{{ selectedWork?.jobTitle }}</div>
+        <div class="company">{{ "@" + selectedWork?.displayName }}</div>
+      </div>
+      <div class="desc-dates">
+        {{ selectedWork?.startDate }} through {{ selectedWork?.endDate }}
+      </div>
+      <div class="desc-body">
+        <div class="text-block">
+          <div>{{ selectedWork?.overview }}</div>
+          <div class="block-header">
+            Key Achievements
+            <ul class="block-list">
+              <li *ngFor="let achievement of selectedWork?.achievements">
+                {{ achievement }}
+              </li>
+            </ul>
+          </div>
+          <div *ngIf="selectedWork?.links" class="block-links">
+            <div class="link-item" *ngFor="let link of selectedWork?.links">
+              <a href="link.url">{{ link.display }}</a>
+            </div>
+          </div>
+          <div class="block-header">
+            Technologies
+            <mat-chip-listbox>
+              <mat-chip *ngFor="let tech of sortTech()">
+                {{ tech }}
+              </mat-chip>
+            </mat-chip-listbox>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
