@@ -17,6 +17,7 @@ export interface Project {
   designProcess: DesignStep[];
   results: string;
   technologies: string[];
+  vision?: string;
 }
 
 interface DesignStep {

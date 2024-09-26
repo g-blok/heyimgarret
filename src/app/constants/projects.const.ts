@@ -7,7 +7,7 @@ export const PROJECTS_LIST: Project[] = [
     link: 'camped',
     images: ['assets/projects/camped.png'],
     subtitle: 'A micro music festival celebrating nature, community, and music',
-    heroImage: 'assets/camped-hero.jpg',
+    heroImage: 'assets/projects/camped/camped-hero.png',
     overview:
       'Camped Collective is a unique micro music festival that brings together artists, nature enthusiasts, and community-minded individuals for an intimate and immersive experience.',
     challenge:
@@ -49,6 +49,8 @@ export const PROJECTS_LIST: Project[] = [
       'Node.js',
       'Shopify',
     ],
+    vision:
+      'Welcome to the visual world of Camped Collective, where nature meets neon and community fuels creativity. 🌳🎨 Our collective is a celebration of individuality, team bonding, environmentalism, and the electrifying pulse of music that unites us all. At the heart of it all is the Camped music festival, the apex around which we gather, but our mission extends beyond just the festival. Together, we cultivate a vibrant community that thrives year-round, with Camped serving as our crowning moment of connection and creativity.',
   },
   {
     id: 'plant-daddy',
