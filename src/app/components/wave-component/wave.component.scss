@@ -1,0 +1,26 @@
+.waves-footer {
+  width: 100%;
+  overflow: hidden;
+  left: 0;
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+
+  .waves-image-top,
+  .waves-image-bottom {
+    width: 120%;
+    min-width: 1200px; // Adjust this value as needed
+    height: 100%;
+    display: block;
+    position: relative;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+  }
+
+  .waves-image-top {
+    transform: translateX(-50%) rotate(180deg);
+    bottom: 0px;
+    top: -10px;
+  }
+}

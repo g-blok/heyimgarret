@@ -4,21 +4,13 @@
 
 <main *ngIf="isMainPage">
   <hero-component id="hero" class="section"></hero-component>
-  <div class="waves-footer">
-    <img src="../assets/waves-forest.svg" alt="" class="waves-image-top" />
-  </div>
+  <wave-component [location]="'bottom'"></wave-component>
   <about-component id="about" class="section"></about-component>
-  <div class="waves-footer">
-    <img src="../assets/waves-forest.svg" alt="" class="waves-image-bottom" />
-  </div>
+  <wave-component [location]="'top'"></wave-component>
   <work-component id="work" class="section"></work-component>
-  <div class="waves-footer">
-    <img src="../assets/waves-forest.svg" alt="" class="waves-image-top" />
-  </div>
+  <wave-component [location]="'bottom'"></wave-component>
   <projects-component id="projects" class="section"></projects-component>
-  <div class="waves-footer">
-    <img src="../assets/waves-forest.svg" alt="" class="waves-image-bottom" />
-  </div>
+  <wave-component [location]="'top'"></wave-component>
   <contact-component id="contact" class="section"></contact-component>
   <footer-component class="section"></footer-component>
 </main>

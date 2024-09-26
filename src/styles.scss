@@ -16,7 +16,7 @@ $eggplant: #66475b;
 $beige: #fdfaf8;
 $tan: #d7bead;
 $bark: #6d553b;
-$veggie: #9d904e;
+$sage: #9fc0ad;
 $moss: #4a8164;
 $forest: #223b2e;
 $lake: #1e4177;
@@ -51,31 +51,6 @@ body {
 
 button {
   font-family: inherit;
-}
-
-.waves-footer {
-  width: 100%;
-  overflow: hidden;
-  left: 0;
-  display: block;
-  box-sizing: border-box;
-  position: relative;
-
-  .waves-image-top,
-  .waves-image-bottom {
-    width: 100%;
-    min-width: 1200px; // Adjust this value as needed
-    height: auto;
-    display: block;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .waves-image-bottom {
-    transform: translateX(-50%) rotate(180deg);
-    margin-top: -1rem;
-  }
 }
 
 // * {
