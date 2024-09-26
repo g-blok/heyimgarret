@@ -1,0 +1,34 @@
+@import "../../../styles.scss";
+
+.title-wrapper {
+  position: relative;
+  height: 100%;
+  text-transform: uppercase;
+}
+
+.title-text {
+  font-size: 4rem;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  line-height: 3.5rem;
+}
+
+.filled-text {
+  font-weight: 900;
+  color: $forest;
+}
+
+.outline-text {
+  font-size: 4rem;
+  font-weight: 900;
+  fill: none; // No fill color
+  stroke: $forest; // Outline color
+  stroke-width: 4px; // Outline width
+  stroke-linejoin: round; // Smooth corners
+}
+
+:host {
+  position: relative;
+  display: inline-block;
+}
