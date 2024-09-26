@@ -1,0 +1,32 @@
+<div class="project-detail">
+  <div class="intro">
+    <img
+      [src]="project?.heroImage"
+      alt="{{ project?.displayName }} hero image"
+      class="hero-image"
+    />
+    <div class="hero-text">
+      <title-text-component
+        [titleText]="project?.displayName"
+      ></title-text-component>
+      <p class="subtitle">{{ project?.overview }}</p>
+    </div>
+  </div>
+  <wave-component [location]="'bottom'"></wave-component>
+  <div class="wave-fill"></div>
+  <wave-component [location]="'top'"></wave-component>
+  <div class="vision">
+    <div class="vision-body">
+      <div class="vision-header">
+        <div class="header-text">VISION</div>
+      </div>
+      <div class="vision-text">
+        {{ project?.vision }}
+      </div>
+      <div class="bottom-fill">blah blah</div>
+    </div>
+    <div class="vision-content-wrapper">
+      <div class="vision-content"></div>
+    </div>
+  </div>
+</div>

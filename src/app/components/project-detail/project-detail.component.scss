@@ -1,0 +1,98 @@
+@import "../../../styles.scss";
+
+.project-detail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: cetner;
+  margin: 10rem auto;
+
+  .intro {
+    display: flex;
+    height: 40rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10rem;
+
+    .hero-image {
+      height: 600px;
+      max-height: 600px;
+    }
+
+    .hero-text {
+      width: 600px;
+      margin-left: 2rem;
+
+      .subtitle {
+        text-align: right;
+        font-size: 1.2rem;
+        line-height: 3rem;
+      }
+    }
+  }
+
+  .wave-fill {
+    background-color: $forest;
+    height: 20rem;
+    margin-top: -4rem;
+    margin-bottom: -4rem;
+  }
+
+  .vision {
+    position: relative;
+    top: -18rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem;
+
+    .vision-body {
+      width: 100%;
+
+      .vision-header {
+        height: 10rem;
+        display: flex;
+        justify-content: start;
+        align-items: end;
+        padding: 1rem 4rem;
+
+        .header-text {
+          color: $sage;
+          font-size: 4rem;
+          font-weight: 900;
+        }
+      }
+
+      .vision-text {
+        font-size: 1.2rem;
+        margin: 6rem 4rem;
+        line-height: 3rem;
+      }
+    }
+
+    .vision-content-wrapper {
+      height: 800px;
+      width: 600px;
+      min-width: 600px;
+      position: relative;
+      border-radius: 5rem;
+      background-color: transparent;
+      border: 1rem solid $moss;
+
+      .vision-content {
+        height: 800px;
+        width: 600px;
+        position: absolute;
+        top: -3rem;
+        left: -2rem;
+        border-radius: 5rem;
+        background-color: $sage;
+      }
+    }
+  }
+
+  .bottom-fill {
+    height: 100rem;
+  }
+}
