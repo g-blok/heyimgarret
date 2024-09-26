@@ -17,6 +17,7 @@ import { WorkComponent } from './components/work/work.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TechnologyPopupComponent } from './components/technology-popup/technology-popup.component';
 import { ProjectService } from './services/project.service';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { ProjectService } from './services/project.service';
     MatChipsModule,
     MatIconModule,
     BrowserAnimationsModule,
+    SharedModule,
   ],
   providers: [ProjectService],
   bootstrap: [AppComponent],
