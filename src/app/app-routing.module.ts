@@ -7,7 +7,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { WorkComponent } from './components/work/work.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ProjectDetailComponent } from './components/project-detail/projectDetail.component';
+import { ProjectDetailComponent } from './components/project-detail/project-detail.component';
+import { ProjectDetailModule } from './components/project-detail/project-detail.module';
 
 const routes: Routes = [
   { path: '', component: HeroComponent },
@@ -15,7 +16,13 @@ const routes: Routes = [
   { path: 'work', component: WorkComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'projects/:id', component: ProjectDetailComponent },
+  {
+    path: 'projects/:id',
+    loadChildren: () =>
+      import('./components/project-detail/project-detail.module').then(
+        (m) => m.ProjectDetailModule
+      ),
+  },
   { path: '**', redirectTo: '' }, // Wildcard for unknown routes
 ];
 
