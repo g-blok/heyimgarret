@@ -20,7 +20,7 @@ export interface Project {
   vision?: string;
 }
 
-interface DesignStep {
+export interface DesignStep {
   title: string;
   description: string;
   image?: string;

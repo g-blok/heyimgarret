@@ -18,8 +18,8 @@ export const PROJECTS_LIST: Project[] = [
       {
         title: 'Brand Exploration',
         description:
-          'Developed mood boards and explored various visual directions to capture the essence of the festival.',
-        image: 'assets/camped-brand-exploration.jpg',
+          'Why the bold, highlighter colors? Because we believe that standing out is the new fitting in. These vibrant hues are more than just eye-catching; they symbolize the radiant energy and diverse spirits that come alive when our community gathers.',
+        image: 'assets/projects/camped/camped-palette.png',
       },
       {
         title: 'Logo Design',

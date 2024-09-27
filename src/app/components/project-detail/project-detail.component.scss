@@ -73,8 +73,8 @@
 
     .vision-content-wrapper {
       height: 800px;
-      width: 600px;
-      min-width: 600px;
+      width: 900px;
+      min-width: 900px;
       position: relative;
       border-radius: 5rem;
       background-color: transparent;
@@ -82,12 +82,69 @@
 
       .vision-content {
         height: 800px;
-        width: 600px;
+        width: 900px;
         position: absolute;
         top: -3rem;
         left: -2rem;
         border-radius: 5rem;
         background-color: $sage;
+      }
+    }
+  }
+
+  .branding {
+    margin-top: -10rem;
+    display: flex;
+    gap: 4rem;
+
+    .samples {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      padding: 4rem;
+      width: 60%;
+      gap: 4rem;
+
+      .blob {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+      }
+
+      .palette {
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        margin-top: 6rem;
+        margin-right: 6rem;
+      }
+    }
+
+    .text {
+      margin-top: 16rem;
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+
+      .branding-header {
+        color: $sage;
+        font-size: 4rem;
+        font-weight: 900;
+      }
+
+      .branding-subheader {
+        margin-top: 2rem;
+        color: $forest;
+        font-size: 2rem;
+        font-weight: 900;
+      }
+
+      .branding-text {
+        font-size: 1.2rem;
+        padding-right: 4rem;
+        line-height: 3rem;
       }
     }
   }
