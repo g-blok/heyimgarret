@@ -6,9 +6,11 @@
       class="hero-image"
     />
     <div class="hero-text">
-      <title-text-component
-        [titleText]="project?.displayName"
-      ></title-text-component>
+      <img
+        [src]="'assets/projects/camped/camped-title.svg'"
+        alt="{{ project?.displayName }} hero image"
+        class="title"
+      />
       <p class="subtitle">{{ project?.overview }}</p>
     </div>
   </div>
@@ -21,12 +23,22 @@
         <div class="header-text">VISION</div>
       </div>
       <div class="vision-text">
-        {{ project?.vision }}
+        {{ project?.vision?.text }}
       </div>
-      <div class="bottom-fill">blah blah</div>
     </div>
     <div class="vision-content-wrapper">
-      <div class="vision-content"></div>
+      <div class="vision-content">
+        <div
+          *ngFor="let image of project?.vision?.images"
+          class="vision-image-wrapper"
+        >
+          <img
+            [src]="image"
+            alt="{{ project?.displayName }} vision image"
+            class="vision-image"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </div>
