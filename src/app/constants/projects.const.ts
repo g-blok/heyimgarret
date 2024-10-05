@@ -49,8 +49,13 @@ export const PROJECTS_LIST: Project[] = [
       'Node.js',
       'Shopify',
     ],
-    vision:
-      'Welcome to the visual world of Camped Collective, where nature meets neon and community fuels creativity. 🌳🎨 Our collective is a celebration of individuality, team bonding, environmentalism, and the electrifying pulse of music that unites us all. At the heart of it all is the Camped music festival, the apex around which we gather, but our mission extends beyond just the festival. Together, we cultivate a vibrant community that thrives year-round, with Camped serving as our crowning moment of connection and creativity.',
+    vision: {
+      text: 'Camped Collective is where nature meets neon, celebrating individuality, community, and music. Our festival is the heart of our mission, fostering a vibrant, year-round community that thrives on creativity and connection.',
+      images: [
+        'assets/projects/camped/vision/camped-dome.png',
+        'assets/projects/camped/vision/camped-tent.png',
+      ],
+    },
   },
   {
     id: 'plant-daddy',

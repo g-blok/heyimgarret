@@ -17,11 +17,16 @@ export interface Project {
   designProcess: DesignStep[];
   results: string;
   technologies: string[];
-  vision?: string;
+  vision?: Vision;
 }
 
 interface DesignStep {
   title: string;
   description: string;
   image?: string;
+}
+
+interface Vision {
+  text: string;
+  images?: string[];
 }
