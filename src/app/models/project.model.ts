@@ -9,13 +9,9 @@ export interface Project {
   displayName: string;
   link: string;
   images: string[];
-  subtitle: string;
   heroImage: string;
+  heroTitle: string;
   overview: string;
-  challenge: string;
-  solution: string;
-  results: string;
-  technologies: string[];
   vision?: Vision;
   branding?: Branding;
   content?: Content;
