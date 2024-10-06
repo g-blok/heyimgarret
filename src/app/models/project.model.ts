@@ -14,18 +14,11 @@ export interface Project {
   overview: string;
   challenge: string;
   solution: string;
-  designProcess: DesignStep[];
   results: string;
   technologies: string[];
   vision?: Vision;
   branding?: Branding;
   content?: Content;
-}
-
-export interface DesignStep {
-  title: string;
-  description: string;
-  image?: string;
 }
 
 interface Vision {
