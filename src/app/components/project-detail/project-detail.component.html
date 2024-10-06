@@ -41,4 +41,46 @@
       </div>
     </div>
   </div>
+  <div class="branding">
+    <div class="branding-blob">
+      <img src="assets/blob.svg" alt="blob" class="blob" />
+      <div class="branding-colors">
+        <img
+          [src]="project?.branding?.colors?.image"
+          alt=""
+          class="color-image"
+        />
+        <div
+          *ngFor="let color of project?.branding?.colors?.palette"
+          class="color-description"
+        >
+          <span class="color-name">{{ color.name }}</span>
+          <span class="color-description">{{ color.description }}</span>
+        </div>
+      </div>
+      <hr class="branding-divider" />
+      <div class="branding-fonts">
+        <img
+          [src]="project?.branding?.fonts?.image"
+          alt=""
+          class="font-image"
+        />
+      </div>
+    </div>
+    <div class="branding-text">
+      <div class="branding-text-header">
+        <div class="header-text">BRANDING</div>
+      </div>
+      <div class="branding-text-body">
+        <div class="text-sub-header">COLORS</div>
+        <div class="text-body">
+          {{ project?.branding?.colors?.text }}
+        </div>
+        <div class="text-sub-header">FONTS</div>
+        <div class="text-body">
+          {{ project?.branding?.fonts?.text }}
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

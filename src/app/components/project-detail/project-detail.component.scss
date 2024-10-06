@@ -126,6 +126,132 @@
     }
   }
 
+  .branding {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    .branding-blob {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: end;
+      gap: 2rem;
+      position: relative;
+      width: 50%;
+      padding: 8rem 6rem;
+
+      .blob {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 120%;
+        z-index: -1;
+      }
+
+      .branding-colors {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: start;
+        gap: 2rem;
+        width: 100%;
+        max-width: 800px;
+
+        .color-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .color-description {
+          font-size: 1rem;
+          line-height: 1.5rem;
+          font-weight: 200;
+          color: white;
+
+          .color-name {
+            font-weight: 900;
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+          }
+        }
+      }
+
+      .branding-divider {
+        border: none;
+        height: 1rem;
+        background-color: $sage;
+        border-radius: 0.5rem;
+        width: 100%;
+        max-width: 800px;
+        margin: 2rem 0;
+        align-self: flex-end;
+      }
+
+      .branding-fonts {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: start;
+        gap: 2rem;
+        width: 100%;
+        max-width: 800px;
+
+        .font-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .branding-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      gap: 2rem;
+      width: 50%;
+      min-width: 400px;
+      padding: 6rem 4rem 0 4rem;
+
+      .branding-text-header {
+        display: flex;
+        justify-content: start;
+        align-items: end;
+        max-width: 600px;
+
+        .header-text {
+          color: $sage;
+          font-size: 4rem;
+          font-weight: 900;
+        }
+      }
+      .branding-text-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 2rem;
+        width: 100%;
+        min-width: 600px;
+        max-width: 600px;
+
+        .text-sub-header {
+          color: $moss;
+          font-size: 1.5rem;
+          font-weight: 900;
+        }
+
+        .text-body {
+          font-size: 1.2rem;
+          line-height: 3rem;
+        }
+      }
+    }
+  }
+
   .bottom-fill {
     height: 100rem;
   }
