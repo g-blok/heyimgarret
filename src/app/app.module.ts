@@ -11,13 +11,13 @@ import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { AdventuresComponent } from './components/adventures/adventures.component';
-import { ContactComponent } from './components/contact/contact.component';
 import { HeroComponent } from './components/hero/hero.component';
+import { LandingComponent } from './components/landing/landing.component';
 import { WorkComponent } from './components/work/work.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { TechnologyPopupComponent } from './components/technology-popup/technology-popup.component';
 import { ProjectService } from './services/project.service';
 import { SharedModule } from './shared/shared.module';
+import { ContactModule } from './components/contact/contact.module'; // Import ContactModule
 
 @NgModule({
   declarations: [
@@ -26,11 +26,10 @@ import { SharedModule } from './shared/shared.module';
     AboutComponent,
     ProjectsComponent,
     AdventuresComponent,
-    ContactComponent,
     HeroComponent,
     WorkComponent,
     FooterComponent,
-    TechnologyPopupComponent,
+    LandingComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +39,7 @@ import { SharedModule } from './shared/shared.module';
     MatIconModule,
     BrowserAnimationsModule,
     SharedModule,
+    ContactModule, // Ensure ContactModule is imported
   ],
   providers: [ProjectService],
   bootstrap: [AppComponent],

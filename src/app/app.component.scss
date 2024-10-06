@@ -1,6 +1,6 @@
 @import "../styles.scss";
 
-header {
+app-header {
   width: 100%;
   position: fixed;
   top: 0;
@@ -11,16 +11,18 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 6rem 0;
+  padding-top: 6rem;
   width: 100%;
 
   @media (max-width: 768px) {
     padding: 4rem 0;
   }
+}
 
-  .section {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
+app-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
 }
