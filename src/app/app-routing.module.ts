@@ -1,17 +1,13 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
 import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
-import { AdventuresComponent } from './components/adventures/adventures.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { HeroComponent } from './components/hero/hero.component';
+import { LandingComponent } from './components/landing/landing.component';
 import { WorkComponent } from './components/work/work.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { ProjectDetailComponent } from './components/project-detail/project-detail.component';
-import { ProjectDetailModule } from './components/project-detail/project-detail.module';
 
 const routes: Routes = [
-  { path: '', component: HeroComponent },
+  { path: '', component: LandingComponent },
   { path: 'about', component: AboutComponent },
   { path: 'work', component: WorkComponent },
   { path: 'projects', component: ProjectsComponent },
@@ -23,7 +19,7 @@ const routes: Routes = [
         (m) => m.ProjectDetailModule
       ),
   },
-  { path: '**', redirectTo: '' }, // Wildcard for unknown routes
+  { path: '**', redirectTo: '' }, // Redirect to the main page
 ];
 
 @NgModule({
@@ -31,6 +27,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes, {
       scrollPositionRestoration: 'enabled',
       anchorScrolling: 'enabled',
+      preloadingStrategy: PreloadAllModules,
     }),
   ],
   exports: [RouterModule],
