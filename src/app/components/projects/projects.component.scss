@@ -26,8 +26,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 2rem;
-  max-width: 1200px;
+  width: 100%;
 }
 
 .project-card {
