@@ -18,6 +18,7 @@ export interface Project {
   results: string;
   technologies: string[];
   vision?: Vision;
+  branding?: Branding;
 }
 
 interface DesignStep {
@@ -29,4 +30,19 @@ interface DesignStep {
 interface Vision {
   text: string;
   images?: string[];
+}
+
+interface Branding {
+  colors: {
+    image: string;
+    text: string;
+    palette: {
+      name: string;
+      description: string;
+    }[];
+  };
+  fonts: {
+    image: string;
+    text: string;
+  };
 }

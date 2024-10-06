@@ -56,6 +56,43 @@ export const PROJECTS_LIST: Project[] = [
         'assets/projects/camped/vision/camped-tent.png',
       ],
     },
+    branding: {
+      colors: {
+        image: 'assets/projects/camped/branding/camped-colors.png',
+        text: `Why the bold, highlighter colors? Because we believe that standing out is the new fitting in. These vibrant hues are more than just eye-catching; they symbolize the radiant energy and diverse spirits that come alive when our community gathers. These colors are not just a palette; they're a manifesto. A declaration that together, we can create something that stands out, shines bright, and leaves a lasting, positive impact on both our community and our planet. Join us, and let's paint the world in vibrant unity! 🌈🌍`,
+        palette: [
+          {
+            name: 'Hot Pink',
+            description:
+              'represents the fearless creativity that drives every beat and every connection made on our dance floors.',
+          },
+          {
+            name: 'Spanish Orange',
+            description:
+              'radiates the warmth and passion of our shared experiences.',
+          },
+          {
+            name: 'School Bus Yellow',
+            description:
+              'captures the bright optimism and joy we feel when we come together in nature.',
+          },
+          {
+            name: 'Jade',
+            description:
+              'symbolizes our commitment to the environment and sustainable practices, grounding us in the natural world that hosts our celebration.',
+          },
+          {
+            name: 'French Violet',
+            description:
+              'embodies the uniqueness of each individual who contributes to the colorful mosaic that is our festival community.',
+          },
+        ],
+      },
+      fonts: {
+        image: 'assets/projects/camped/branding/camped-fonts.png',
+        text: `Why the bold, highlighter colors? Because we believe that standing out is the new fitting in. These vibrant hues are more than just eye-catching; they symbolize the radiant energy and diverse spirits that come alive when our community gathers.`,
+      },
+    },
   },
   {
     id: 'plant-daddy',
