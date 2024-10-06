@@ -22,7 +22,7 @@ export interface Project {
   content?: Content;
 }
 
-interface DesignStep {
+export interface DesignStep {
   title: string;
   description: string;
   image?: string;
