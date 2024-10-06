@@ -83,4 +83,33 @@
       </div>
     </div>
   </div>
+  <div class="content-wrapper">
+    <div class="content">
+      <div class="content-header">{{ project?.content?.header }}</div>
+      <div class="content-images-carousel">
+        <button
+          mat-icon-button
+          class="carousel-button left"
+          (click)="scrollLeft()"
+        >
+          <mat-icon>arrow_back</mat-icon>
+        </button>
+        <button
+          mat-icon-button
+          class="carousel-button right"
+          (click)="scrollRight()"
+        >
+          <mat-icon class="material-symbols-rounded">arrow_forward</mat-icon>
+        </button>
+        <div class="content-images">
+          <div
+            *ngFor="let image of project?.content?.images"
+            class="content-image-wrapper"
+          >
+            <img [src]="image" alt="" class="content-image" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

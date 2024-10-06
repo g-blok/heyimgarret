@@ -6,7 +6,7 @@
   width: 100%;
   justify-content: center;
   align-items: cetner;
-  margin: 10rem auto;
+  margin: 6rem auto;
 
   .intro {
     display: flex;
@@ -84,6 +84,7 @@
       border-radius: 3rem;
       background-color: transparent;
       border: 1rem solid $moss;
+      margin-top: -10rem;
 
       .vision-content {
         height: 800px;
@@ -130,6 +131,7 @@
     display: flex;
     justify-content: center;
     align-items: start;
+    margin-top: -12rem;
 
     .branding-blob {
       display: flex;
@@ -255,4 +257,118 @@
   .bottom-fill {
     height: 100rem;
   }
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  height: calc(600px + 4rem);
+  width: calc(100% - 12rem);
+  max-width: 1500px;
+  position: relative;
+  border-radius: 3rem;
+  background-color: transparent;
+  border: 1rem solid $moss;
+
+  .content {
+    height: 600px;
+    width: calc(100% - 4rem);
+    max-width: 1500px;
+    position: absolute;
+    top: -3rem;
+    left: -2rem;
+    border-radius: 2rem;
+    background-color: $sage;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  .content-header {
+    font-size: 4rem;
+    font-weight: 900;
+    color: $moss;
+  }
+
+  .content-images-carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 6rem;
+      height: 100%;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    &::before {
+      left: 0;
+      background: linear-gradient(
+        to right,
+        rgba($sage, 1),
+        rgba(255, 255, 255, 0)
+      );
+    }
+
+    &::after {
+      right: 0;
+      background: linear-gradient(
+        to left,
+        rgba($sage, 1),
+        rgba(255, 255, 255, 0)
+      );
+    }
+
+    .content-images {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      width: 100%;
+      height: calc(600px - 8rem);
+      scrollbar-width: none;
+
+      .content-image-wrapper {
+        flex: 0 0 auto;
+        margin-right: 6rem;
+        height: 100%;
+
+        .content-image {
+          height: 100%;
+          width: auto;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .carousel-button {
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0);
+
+    mat-icon {
+      transform: scale(4);
+    }
+  }
+
+  .carousel-button.left {
+    left: 0;
+  }
+}
+
+.carousel-button.right {
+  right: 0;
 }

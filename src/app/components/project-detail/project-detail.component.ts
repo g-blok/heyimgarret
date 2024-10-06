@@ -22,4 +22,18 @@ export class ProjectDetailComponent implements OnInit {
       this.project = this.projectService.getProjectById(projectId);
     }
   }
+
+  scrollLeft(): void {
+    const container = document.querySelector('.content-images');
+    if (container) {
+      container.scrollBy({ left: -200, behavior: 'smooth' });
+    }
+  }
+
+  scrollRight(): void {
+    const container = document.querySelector('.content-images');
+    if (container) {
+      container.scrollBy({ left: 200, behavior: 'smooth' });
+    }
+  }
 }
