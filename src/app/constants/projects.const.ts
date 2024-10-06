@@ -93,6 +93,17 @@ export const PROJECTS_LIST: Project[] = [
         text: `Why the bold, highlighter colors? Because we believe that standing out is the new fitting in. These vibrant hues are more than just eye-catching; they symbolize the radiant energy and diverse spirits that come alive when our community gathers.`,
       },
     },
+    content: {
+      header: 'CONTENT',
+      images: [
+        'assets/projects/camped/content/camped-content-1.png',
+        'assets/projects/camped/content/camped-content-2.png',
+        'assets/projects/camped/content/camped-content-3.png',
+        'assets/projects/camped/content/camped-content-4.png',
+        'assets/projects/camped/content/camped-content-5.png',
+        'assets/projects/camped/content/camped-content-6.png',
+      ],
+    },
   },
   {
     id: 'plant-daddy',
