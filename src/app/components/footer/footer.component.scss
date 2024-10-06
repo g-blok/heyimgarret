@@ -1,6 +1,19 @@
-@import '../../../styles.scss';
+@import "../../../styles.scss";
 
 .footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  contact-component {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .note {
     display: flex;
     align-items: center;
     max-width: 60%;
@@ -9,14 +22,15 @@
     gap: 0.5rem;
 
     span {
-        font-size: 0.75rem;
-        color: $tan;
+      font-size: 0.75rem;
+      color: $tan;
     }
 
     mat-icon {
-        font-size: 0.75rem;
-        color: $moss;
-        height: 0.75rem;
-        width: 0.75rem;
+      font-size: 0.75rem;
+      color: $moss;
+      height: 0.75rem;
+      width: 0.75rem;
     }
+  }
 }
