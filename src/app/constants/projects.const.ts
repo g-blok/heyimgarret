@@ -129,66 +129,66 @@ export const PROJECTS_LIST: Project[] = [
     },
   },
   {
-    id: 'beat-buckets',
-    displayName: 'Beat Buckets',
-    link: 'beat-buckets',
-    images: ['assets/projects/beat_buckets.png'],
-    heroImage: 'assets/beat-buckets-hero.jpg',
-    heroTitle: 'assets/projects/beat_buckets/beat-buckets-hero-title.svg',
+    id: 'ecodraw',
+    displayName: 'EcoDraw',
+    link: 'ecodraw',
+    images: ['assets/projects/ecodraw.png'],
+    heroImage: 'assets/projects/ecodraw/ecodraw-hero.png',
+    heroTitle: 'assets/projects/ecodraw/ecodraw-hero-title.svg',
     overview:
-      'Beat Buckets is a comprehensive app that helps DJs manage their music collections across multiple platforms, ensuring they never miss a beat or buy duplicate tracks.',
+      'EcoDraw is a platform that helps energy storage and renewable developers sell, build, and manage their projects across the entire lifecycle—from the spark of an idea to operational success.',
     vision: {
-      text: 'Beat Buckets is where music meets innovation, providing DJs with the tools they need to manage their collections effortlessly. Our vision is to create a seamless experience that keeps the music flowing and the creativity alive.',
+      text: `EcoDraw envisions a world where managing energy projects is as inspiring as the clean future we’re working towards. Our platform is designed to make energy projects easy and fun, whether you're an engineer in the weeds or a C-suite exec looking at the big picture.`,
       images: [
-        'assets/projects/beat_buckets/vision/beat-buckets-vision-1.png',
-        'assets/projects/beat_buckets/vision/beat-buckets-vision-2.png',
+        'assets/projects/ecodraw/vision/ecodraw-vision-1.png',
+        'assets/projects/ecodraw/vision/ecodraw-vision-2.png',
       ],
     },
     branding: {
       colors: {
-        image: 'assets/projects/beat_buckets/branding/beat-buckets-colors.png',
-        text: `Our color palette is designed to reflect the dynamic and energetic nature of the DJ community. These colors are not just visually striking; they represent the vibrant beats and rhythms that define our app. Each hue is a testament to the passion and creativity that DJs bring to their craft.`,
+        image: 'assets/projects/ecodraw/branding/ecodraw-colors.png',
+        text: `Inspired by solarpunk aesthetics, our color palette of muted earth tones—Moss Veil, Evergreen Haze, Fern Mist, Riverstone, and Sunlit Dune—evokes nature’s calm resilience while grounding the platform in a modern, professional vibe.`,
         palette: [
           {
-            name: 'Electric Blue',
+            name: 'Moss Veil',
             description:
-              'captures the electrifying energy of a live DJ set, keeping the crowd moving and engaged.',
+              'evokes the lush and vibrant energy of a thriving ecosystem.',
           },
           {
-            name: 'Neon Green',
+            name: 'Evergreen Haze',
             description:
-              'symbolizes the fresh and innovative approach we bring to music management.',
+              'symbolizes the enduring and sustainable nature of renewable energy.',
           },
           {
-            name: 'Vibrant Purple',
+            name: 'Fern Mist',
             description:
-              'represents the creativity and uniqueness of each DJ’s personal style.',
+              'captures the freshness and innovation of EcoDraw’s approach.',
           },
           {
-            name: 'Bright Red',
+            name: 'Riverstone',
             description:
-              'embodies the passion and intensity that drives every performance.',
+              'reflects the stability and reliability of our platform.',
           },
           {
-            name: 'Bold Yellow',
+            name: 'Sunlit Dune',
             description:
-              'reflects the optimism and joy that music brings to our lives.',
+              'embodies the warmth and optimism of a sustainable future.',
           },
         ],
       },
       fonts: {
-        image: 'assets/projects/beat_buckets/branding/beat-buckets-fonts.png',
-        text: `Our fonts are bold and modern, designed to be both functional and visually appealing. They reflect the clarity and precision of our app, making it easy for DJs to navigate and manage their music collections.`,
+        image: 'assets/projects/ecodraw/branding/ecodraw-fonts.png',
+        text: `Our fonts are designed to be both approachable and professional, reflecting the innovative energy behind EcoDraw.`,
       },
     },
     content: {
       header: 'CONTENT',
       images: [
-        'assets/projects/beat_buckets/content/beat-buckets-content-1.png',
-        'assets/projects/beat_buckets/content/beat-buckets-content-2.png',
-        'assets/projects/beat_buckets/content/beat-buckets-content-3.png',
-        'assets/projects/beat_buckets/content/beat-buckets-content-4.png',
-        'assets/projects/beat_buckets/content/beat-buckets-content-5.png',
+        'assets/projects/ecodraw/content/ecodraw-content-1.png',
+        'assets/projects/ecodraw/content/ecodraw-content-2.png',
+        'assets/projects/ecodraw/content/ecodraw-content-3.png',
+        'assets/projects/ecodraw/content/ecodraw-content-4.png',
+        'assets/projects/ecodraw/content/ecodraw-content-5.png',
       ],
     },
   },
