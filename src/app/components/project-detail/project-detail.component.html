@@ -106,16 +106,16 @@
           class="carousel-button left"
           (click)="scrollLeft()"
         >
-          <mat-icon>arrow_back</mat-icon>
+          <img src="assets/content-arrow-left.svg" alt="Left Arrow" />
         </button>
         <button
           mat-icon-button
           class="carousel-button right"
           (click)="scrollRight()"
         >
-          <mat-icon class="material-symbols-rounded">arrow_forward</mat-icon>
+          <img src="assets/content-arrow-right.svg" alt="Right Arrow" />
         </button>
-        <div class="content-images">
+        <div class="content-images" #contentImages>
           <div
             *ngFor="let image of project?.content?.images"
             class="content-image-wrapper"

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProjectService } from '../../services/project.service';
 import { Project } from '../../models/project.model';
@@ -8,8 +8,9 @@ import { Project } from '../../models/project.model';
   templateUrl: './project-detail.component.html',
   styleUrls: ['./project-detail.component.scss'],
 })
-export class ProjectDetailComponent implements OnInit {
+export class ProjectDetailComponent {
   project: Project | undefined;
+  @ViewChild('contentImages', { static: false }) contentImages!: ElementRef;
 
   constructor(
     private route: ActivatedRoute,
@@ -21,19 +22,20 @@ export class ProjectDetailComponent implements OnInit {
     if (projectId) {
       this.project = this.projectService.getProjectById(projectId);
     }
+    console.log(this.contentImages);
   }
 
   scrollLeft(): void {
-    const container = document.querySelector('.content-images');
-    if (container) {
-      container.scrollBy({ left: -200, behavior: 'smooth' });
-    }
+    this.contentImages.nativeElement.scrollBy({
+      left: -300,
+      behavior: 'smooth',
+    });
   }
 
   scrollRight(): void {
-    const container = document.querySelector('.content-images');
-    if (container) {
-      container.scrollBy({ left: 200, behavior: 'smooth' });
-    }
+    this.contentImages.nativeElement.scrollBy({
+      left: 300,
+      behavior: 'smooth',
+    });
   }
 }
