@@ -1,35 +1,5 @@
 @import "../../../styles.scss";
 
-@keyframes rock {
-  0%,
-  100% {
-    transform: rotate(-5deg);
-  }
-  50% {
-    transform: rotate(5deg);
-  }
-}
-
-.foley-animation-1 {
-  animation: rock 2s infinite ease-in-out;
-}
-
-.foley-animation-2 {
-  animation: rock 3s infinite ease-in-out;
-}
-
-.foley-animation-3 {
-  animation: rock 4s infinite ease-in-out;
-}
-
-.foley-animation-4 {
-  animation: rock 5s infinite ease-in-out;
-}
-
-.foley-animation-5 {
-  animation: rock 6s infinite ease-in-out;
-}
-
 .about-container {
   width: 100%;
   min-width: 320px; // Add a minimum width
@@ -121,6 +91,26 @@
   }
 }
 
+.foley-animation-1 {
+  animation: rock 2s infinite ease-in-out;
+}
+
+.foley-animation-2 {
+  animation: rock 3s infinite ease-in-out;
+}
+
+.foley-animation-3 {
+  animation: rock 4s infinite ease-in-out;
+}
+
+.foley-animation-4 {
+  animation: rock 5s infinite ease-in-out;
+}
+
+.foley-animation-5 {
+  animation: rock 6s infinite ease-in-out;
+}
+
 @media (max-width: 430px) {
   .about-container {
     .about-content {
@@ -148,5 +138,15 @@
         justify-content: flex-end;
       }
     }
+  }
+}
+
+@keyframes rock {
+  0%,
+  100% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
   }
 }
