@@ -3,7 +3,7 @@
     <h2 class="section-title">projects</h2>
     <div class="projects-grid">
       <div
-        *ngFor="let project of projects"
+        *ngFor="let project of projects | filterByShow"
         class="project-card"
         (click)="goToProjectPage(project.link)"
       >

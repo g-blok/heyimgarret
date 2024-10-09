@@ -17,7 +17,8 @@ import { WorkComponent } from './components/work/work.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProjectService } from './services/project.service';
 import { SharedModule } from './shared/shared.module';
-import { ContactModule } from './components/contact/contact.module'; // Import ContactModule
+import { ContactModule } from './components/contact/contact.module';
+import { FilterByShowPipe } from './pipes/filter-by-show.pipe';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ContactModule } from './components/contact/contact.module'; // Import C
     WorkComponent,
     FooterComponent,
     LandingComponent,
+    FilterByShowPipe,
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,7 @@ import { ContactModule } from './components/contact/contact.module'; // Import C
     MatIconModule,
     BrowserAnimationsModule,
     SharedModule,
-    ContactModule, // Ensure ContactModule is imported
+    ContactModule,
   ],
   providers: [ProjectService],
   bootstrap: [AppComponent],
