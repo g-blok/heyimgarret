@@ -2,6 +2,7 @@ import { Project } from '../models/project.model';
 
 export const PROJECTS_LIST: Project[] = [
   {
+    show: true,
     id: 'camped',
     displayName: 'Camped Collective',
     link: 'camped',
@@ -67,70 +68,7 @@ export const PROJECTS_LIST: Project[] = [
     },
   },
   {
-    id: 'plant-daddy',
-    displayName: 'Plant Daddy',
-    link: 'plant-daddy',
-    projectUrl: null,
-    images: ['assets/projects/plant_daddy.png'],
-    heroImage: 'assets/projects/plant_daddy/plant-daddy-hero.png',
-    heroTitle: 'assets/projects/plant_daddy/plant-daddy-hero-title.svg',
-    overview:
-      'Plant Daddy is an innovative app that helps users monitor and care for their plants, providing personalized care instructions and connecting them with local nurseries.',
-    vision: {
-      text: 'Plant Daddy envisions a world where every plant grooves to the rhythm of life, and every plant parent feels like a disco star in the garden. Our mission is to cultivate a community of funky green thumbs who share a passion for nurturing nature with a groovy twist.',
-      images: [
-        'assets/projects/plant_daddy/vision/plant-daddy-vision-1.png',
-        'assets/projects/plant_daddy/vision/plant-daddy-vision-2.png',
-      ],
-    },
-    branding: {
-      colors: {
-        image: 'assets/projects/plant_daddy/branding/plant-daddy-colors.png',
-        text: `Our color palette is inspired by the vibrant hues of a disco dance floor, reflecting the diversity and beauty of the plant kingdom. These colors symbolize the groovy energy, vitality, and the joy of nurturing life in a funky way.`,
-        palette: [
-          {
-            name: 'Groovy Green',
-            description:
-              'captures the vibrant and lively energy of a disco jungle.',
-          },
-          {
-            name: 'Cool Cucumber',
-            description: 'symbolizes the fresh and mellow vibes of new growth.',
-          },
-          {
-            name: 'Disco Sunshine',
-            description:
-              'radiates the warm and inviting glow of a dance floor under the sun.',
-          },
-          {
-            name: 'Funky Copper',
-            description:
-              'reflects the rich and dynamic tones of a groovy garden.',
-          },
-          {
-            name: 'Boogie Brown',
-            description:
-              'embodies the earthy and soulful essence of a well-loved plant haven.',
-          },
-        ],
-      },
-      fonts: {
-        image: 'assets/projects/plant_daddy/branding/plant-daddy-fonts.png',
-        text: `Our fonts are bold and funky, designed to be both eye-catching and fun. They reflect the groovy and playful nature of our app, making it easy for users to navigate and enjoy their plant care journey with a disco twist.`,
-      },
-    },
-    content: {
-      header: 'CONTENT',
-      images: [
-        'assets/projects/plant_daddy/content/plant-daddy-content-1.png',
-        'assets/projects/plant_daddy/content/plant-daddy-content-2.png',
-        'assets/projects/plant_daddy/content/plant-daddy-content-3.png',
-        'assets/projects/plant_daddy/content/plant-daddy-content-4.png',
-        'assets/projects/plant_daddy/content/plant-daddy-content-5.png',
-      ],
-    },
-  },
-  {
+    show: true,
     id: 'ecodraw',
     displayName: 'EcoDraw',
     link: 'ecodraw',
@@ -196,6 +134,72 @@ export const PROJECTS_LIST: Project[] = [
     },
   },
   {
+    show: true,
+    id: 'plant-daddy',
+    displayName: 'Plant Daddy',
+    link: 'plant-daddy',
+    projectUrl: null,
+    images: ['assets/projects/plant_daddy.png'],
+    heroImage: 'assets/projects/plant_daddy/plant-daddy-hero.png',
+    heroTitle: 'assets/projects/plant_daddy/plant-daddy-hero-title.svg',
+    overview:
+      'Plant Daddy is an innovative app that helps users monitor and care for their plants, providing personalized care instructions and connecting them with local nurseries.',
+    vision: {
+      text: 'Plant Daddy envisions a world where every plant grooves to the rhythm of life, and every plant parent feels like a disco star in the garden. Our mission is to cultivate a community of funky green thumbs who share a passion for nurturing nature with a groovy twist.',
+      images: [
+        'assets/projects/plant_daddy/vision/plant-daddy-vision-1.png',
+        'assets/projects/plant_daddy/vision/plant-daddy-vision-2.png',
+      ],
+    },
+    branding: {
+      colors: {
+        image: 'assets/projects/plant_daddy/branding/plant-daddy-colors.png',
+        text: `Our color palette is inspired by the vibrant hues of a disco dance floor, reflecting the diversity and beauty of the plant kingdom. These colors symbolize the groovy energy, vitality, and the joy of nurturing life in a funky way.`,
+        palette: [
+          {
+            name: 'Groovy Green',
+            description:
+              'captures the vibrant and lively energy of a disco jungle.',
+          },
+          {
+            name: 'Cool Cucumber',
+            description: 'symbolizes the fresh and mellow vibes of new growth.',
+          },
+          {
+            name: 'Disco Sunshine',
+            description:
+              'radiates the warm and inviting glow of a dance floor under the sun.',
+          },
+          {
+            name: 'Funky Copper',
+            description:
+              'reflects the rich and dynamic tones of a groovy garden.',
+          },
+          {
+            name: 'Boogie Brown',
+            description:
+              'embodies the earthy and soulful essence of a well-loved plant haven.',
+          },
+        ],
+      },
+      fonts: {
+        image: 'assets/projects/plant_daddy/branding/plant-daddy-fonts.png',
+        text: `Our fonts are bold and funky, designed to be both eye-catching and fun. They reflect the groovy and playful nature of our app, making it easy for users to navigate and enjoy their plant care journey with a disco twist.`,
+      },
+    },
+    content: {
+      header: 'CONTENT',
+      images: [
+        'assets/projects/plant_daddy/content/plant-daddy-content-1.png',
+        'assets/projects/plant_daddy/content/plant-daddy-content-2.png',
+        'assets/projects/plant_daddy/content/plant-daddy-content-3.png',
+        'assets/projects/plant_daddy/content/plant-daddy-content-4.png',
+        'assets/projects/plant_daddy/content/plant-daddy-content-5.png',
+      ],
+    },
+  },
+  {
+    show: false,
     id: 'sea-quill',
     displayName: 'Sea Quill',
     link: 'sea-quill',

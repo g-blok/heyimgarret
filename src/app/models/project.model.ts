@@ -5,6 +5,7 @@ export interface ExternalLink {
 }
 
 export interface Project {
+  show: boolean;
   id: string;
   displayName: string;
   link: string;
