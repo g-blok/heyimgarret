@@ -12,6 +12,20 @@
         class="title"
       />
       <p class="subtitle">{{ project?.overview }}</p>
+      <div class="project-url">
+        <img
+          src="assets/foley/link-arrow.svg"
+          alt="arrow"
+          class="project-url-arrow"
+        />
+        <a
+          *ngIf="project?.projectUrl"
+          [href]="project?.projectUrl"
+          target="_blank"
+          class="project-url-button"
+          >{{ project?.projectUrl }}</a
+        >
+      </div>
     </div>
   </div>
   <wave-component [location]="'bottom'"></wave-component>

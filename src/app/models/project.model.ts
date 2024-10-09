@@ -8,6 +8,7 @@ export interface Project {
   id: string;
   displayName: string;
   link: string;
+  projectUrl: string | null;
   images: string[];
   heroImage: string;
   heroTitle: string;
