@@ -11,17 +11,35 @@
     width: calc(100% + 1rem);
     min-width: 800px;
     max-height: 200px;
-    height: auto;
+    height: 100%;
     display: block;
     position: relative;
     left: 50%;
-    bottom: -10px;
+    bottom: -1rem;
     transform: translateX(-50%);
   }
 
   .waves-image-top {
     transform: translateX(-50%) rotate(180deg);
     bottom: 0px;
-    top: -10px;
+    top: -1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .waves-footer {
+    .waves-image-top,
+    .waves-image-bottom {
+      max-height: 600px;
+      height: 100%;
+    }
+
+    .waves-image-top {
+      bottom: 0px;
+      top: -4rem;
+    }
+    .waves-image-bottom {
+      bottom: -4rem;
+    }
   }
 }

@@ -7,6 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class WaveComponent {
   @Input() location: string = 'top';
-
+  @Input() height: string = '200px';
   constructor() {}
 }
