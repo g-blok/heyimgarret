@@ -1,6 +1,5 @@
 @import "../../../styles.scss";
 
-/* Header Container */
 header {
   color: $forest;
   padding: 10px 20px;
@@ -12,6 +11,7 @@ header {
   z-index: 1000;
   border-radius: 0.5rem;
   margin: 1rem;
+  background-color: rgba(253, 250, 248, 0.9);
 }
 
 .logo {
@@ -31,7 +31,6 @@ header {
   cursor: pointer;
   padding: 1rem;
   z-index: 1001;
-  background-color: rgba(253, 250, 248, 0.6);
   border-radius: 0.5rem;
 
   span {
@@ -124,7 +123,11 @@ header {
 }
 
 // Media query for larger screens
-@media (min-width: 769px) {
+@media (min-width: 1000px) {
+  header {
+    background-color: transparent;
+  }
+
   .hamburger {
     display: none;
   }
