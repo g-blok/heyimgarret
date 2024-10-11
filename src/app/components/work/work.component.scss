@@ -16,6 +16,10 @@
     width: 100%;
   }
 
+  .work-list {
+    padding: 0;
+  }
+
   .work-tabs {
     min-width: 30%;
     width: 30%;
@@ -29,6 +33,11 @@
         padding: 1rem;
         line-height: 1.5rem;
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        text-align: start;
+        font-weight: 900;
       }
       li:hover {
         background-color: rgba($moss, 0.2);
@@ -40,6 +49,8 @@
       .selected {
         color: $moss !important;
         font-weight: 900;
+        background-color: rgba($moss, 0.1);
+        border-radius: 1rem;
       }
     }
   }
@@ -119,6 +130,65 @@
       .tech-chip-container {
         display: flex;
         gap: 1rem;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 2rem 1rem;
+
+    .work-inner {
+      flex-direction: column;
+    }
+
+    .work-list {
+      display: flex;
+      padding: 0;
+    }
+
+    .work-tabs {
+      width: 100%;
+      min-width: unset;
+      margin-bottom: 2rem;
+
+      ul {
+        gap: 1rem;
+
+        li {
+          padding: 0.5rem;
+          line-height: 1.2rem;
+          justify-content: center;
+          text-align: center;
+        }
+      }
+    }
+
+    .work-description {
+      padding: 0;
+
+      .desc-header {
+        .job-title,
+        .company {
+          font-size: 1.2rem;
+        }
+      }
+
+      .desc-dates {
+        font-size: 0.7rem;
+      }
+
+      .desc-body {
+        .text-block {
+          padding-left: 1rem;
+          gap: 0.5rem;
+
+          .block-links {
+            flex-direction: column;
+            padding-left: 0;
+            gap: 0.5rem;
+          }
+        }
       }
     }
   }
