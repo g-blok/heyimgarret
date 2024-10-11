@@ -33,10 +33,10 @@
         .title {
           font-size: 1.5rem;
           font-weight: bold;
-          color: $white;
+          color: $moss;
         }
         .body-text {
-          color: $tan;
+          color: $beige;
         }
       }
     }
@@ -114,7 +114,7 @@
 @media (max-width: 430px) {
   .about-container {
     .about-content {
-      padding: 1rem; // Reduce padding on very small screens
+      padding: 2rem;
     }
   }
 }

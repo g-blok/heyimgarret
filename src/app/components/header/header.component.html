@@ -21,12 +21,13 @@
             >projects</a
           >
         </li>
-        <li class="cta">
+        <li class="cta" *ngIf="!isSmallScreen">
           <a routerLink="/" fragment="contact" (click)="toggleMenu()"
             >contact</a
           >
         </li>
       </ul>
     </nav>
+    <contact-component *ngIf="isSmallScreen"></contact-component>
   </div>
 </header>

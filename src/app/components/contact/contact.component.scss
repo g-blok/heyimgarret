@@ -1,79 +1,129 @@
-@import '../../../styles.scss';
+@import "../../../styles.scss";
 
 .contact-container {
-    margin-top: 6rem;
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  max-width: 60%;
+  gap: 0.5rem;
+
+  .signature {
     display: flex;
-    justify-content: center;
-    width: 60%;
-    max-width: 60%;
-    gap: 0.5rem;
+    align-items: center;
+    gap: 1rem;
+    width: 50%;
+    height: 2rem;
 
-    .signature {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        width: 50%;
-        height: 2rem;
-
-        mat-icon {
-            color: $moss;
-        }
-
-        .date {
-            font-weight: bold;
-            color: $forest;
-        }
-
-        .name {
-            color: $forest;
-        }
-
-        .dot-divider {
-            height: 0.6rem;
-            width: 0.6rem;
-            background-color: $moss;
-            border-radius: 0.3rem;
-        }
-
-        .app-desc {
-            position: relative;
-            font-weight: bold;
-            color: $forest;
-        }
+    mat-icon {
+      color: $moss;
     }
+
+    .date {
+      font-weight: bold;
+      color: $forest;
+    }
+
+    .name {
+      color: $forest;
+    }
+
+    .dot-divider {
+      height: 0.6rem;
+      width: 0.6rem;
+      background-color: $moss;
+      border-radius: 0.3rem;
+    }
+
+    .app-desc {
+      position: relative;
+      font-weight: bold;
+      color: $forest;
+    }
+  }
+
+  .link-section {
+    display: flex;
+    width: 20%;
+
+    .places-links {
+      width: 50%;
+    }
+
+    .contact-links {
+      width: 50%;
+    }
+
+    .links-header {
+      color: $forest;
+      font-weight: bold;
+      height: 2rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .links-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      list-style: none;
+      padding: 0;
+      margin-top: 2rem;
+
+      .link-text {
+        color: $forest;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+// Media query for smaller screens
+@media (max-width: 1264px) {
+  .contact-container {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 0;
+    align-items: center;
 
     .link-section {
+      display: flex;
+      width: 100%;
+      min-width: 300px;
+
+      .places-links {
+        width: 100%;
+      }
+
+      .contact-links {
+        width: 100%;
+      }
+
+      .links-header {
+        color: $moss;
+        font-weight: bold;
+        height: 2rem;
         display: flex;
-        width: 20%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
 
-        .places-links {
-            width: 50%;
+      .links-list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        list-style: none;
+        padding: 0;
+        margin-top: 2rem;
+        text-align: center;
+
+        .link-text {
+          color: $white;
+          text-decoration: none;
+          text-align: center;
         }
-
-        .contact-links {
-            width: 50%;
-        }
-
-        .links-header {
-            color: $forest;
-            font-weight: bold;
-            height: 2rem;
-            display: flex;
-            align-items: center;
-        }
-
-        .links-list {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            list-style: none;
-            padding: 0;
-            margin-top: 2rem;
-
-            .link-text {
-                color: $forest;
-                text-decoration: none;
-            }
-        }
+      }
     }
+  }
 }

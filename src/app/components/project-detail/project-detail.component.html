@@ -1,19 +1,12 @@
 <div class="project-detail">
   <div class="intro">
-    <img
-      [src]="project?.heroImage"
-      alt="{{ project?.displayName }} hero image"
-      class="hero-image"
-    />
+    <img [src]="project?.heroImage" alt="¯\_(ツ)_/¯" class="hero-image" />
     <div class="hero-text">
-      <img
-        [src]="project?.heroTitle"
-        alt="{{ project?.displayName }} hero image"
-        class="title"
-      />
+      <img [src]="project?.heroTitle" alt="¯\_(ツ)_/¯" class="title" />
       <p class="subtitle">{{ project?.overview }}</p>
       <div class="project-url">
         <img
+          *ngIf="screenWidth > 768"
           src="assets/foley/link-arrow.svg"
           alt="arrow"
           class="project-url-arrow"
@@ -56,9 +49,16 @@
     </div>
   </div>
   <div class="branding">
+    <div class="branding-text-header">
+      <div class="header-text">BRANDING</div>
+    </div>
     <div class="branding-blob">
       <img src="assets/blob.svg" alt="blob" class="blob" />
       <div class="branding-colors">
+        <div class="blob-text-sub-header">COLORS</div>
+        <div class="blob-text-body">
+          {{ project?.branding?.colors?.text }}
+        </div>
         <img
           [src]="project?.branding?.colors?.image"
           alt=""
@@ -72,27 +72,19 @@
           <span class="color-description">{{ color.description }}</span>
         </div>
       </div>
-      <hr class="branding-divider" />
-      <div class="branding-fonts">
-        <img
-          [src]="project?.branding?.fonts?.image"
-          alt=""
-          class="font-image"
-        />
-      </div>
     </div>
     <div class="branding-text">
-      <div class="branding-text-header">
-        <div class="header-text">BRANDING</div>
-      </div>
       <div class="branding-text-body">
-        <div class="text-sub-header">COLORS</div>
-        <div class="text-body">
-          {{ project?.branding?.colors?.text }}
-        </div>
         <div class="text-sub-header">FONTS</div>
         <div class="text-body">
           {{ project?.branding?.fonts?.text }}
+        </div>
+        <div class="branding-fonts">
+          <img
+            [src]="project?.branding?.fonts?.image"
+            alt=""
+            class="font-image"
+          />
         </div>
       </div>
     </div>

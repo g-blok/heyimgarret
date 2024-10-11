@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { ScreenService } from '../../services/screen.service';
 @Component({
   selector: 'contact-component',
   templateUrl: './contact.component.html',
@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
   isPopupVisible: boolean = false;
+  isSmallScreen = false;
+  constructor(private screenService: ScreenService) {
+    this.isSmallScreen = this.screenService.getIsSmallScreen();
+  }
 
   showPopup() {
     this.isPopupVisible = true;
