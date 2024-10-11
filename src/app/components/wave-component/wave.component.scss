@@ -8,9 +8,10 @@
 
   .waves-image-top,
   .waves-image-bottom {
-    width: 120%;
-    min-width: 1200px; // Adjust this value as needed
-    height: 100%;
+    width: calc(100% + 1rem);
+    min-width: 800px;
+    max-height: 200px;
+    height: auto;
     display: block;
     position: relative;
     left: 50%;
