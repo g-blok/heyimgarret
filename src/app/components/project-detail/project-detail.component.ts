@@ -10,6 +10,7 @@ import { Project } from '../../models/project.model';
 })
 export class ProjectDetailComponent {
   project: Project | undefined;
+  screenWidth: number = window.innerWidth;
   @ViewChild('contentImages', { static: false }) contentImages!: ElementRef;
 
   constructor(
