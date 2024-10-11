@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
-
+import { ScreenService } from '../../services/screen.service';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -9,11 +8,7 @@ import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 export class FooterComponent {
   isSmallScreen: boolean = false;
 
-  constructor(private breakpointObserver: BreakpointObserver) {
-    this.breakpointObserver
-      .observe('(max-width: 1264px)')
-      .subscribe((state: BreakpointState) => {
-        this.isSmallScreen = state.matches;
-      });
+  constructor(private screenService: ScreenService) {
+    this.isSmallScreen = this.screenService.getIsSmallScreen();
   }
 }
