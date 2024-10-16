@@ -6,7 +6,7 @@
       <p class="subtitle">{{ project?.overview }}</p>
       <div class="project-url">
         <img
-          *ngIf="screenWidth > 768"
+          *ngIf="screenWidth > 768 && project?.projectUrl"
           src="assets/foley/link-arrow.svg"
           alt="arrow"
           class="project-url-arrow"

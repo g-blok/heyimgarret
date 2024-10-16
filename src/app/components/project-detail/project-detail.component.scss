@@ -43,7 +43,7 @@
       .project-url {
         display: flex;
         align-items: center;
-        justify-content: end;
+        justify-content: center;
         gap: 1rem;
         margin-top: 2rem;
 
@@ -192,7 +192,7 @@
     .branding-blob {
       display: flex;
       flex-direction: column;
-      justify-content: end;
+      justify-content: center;
       align-items: end;
       gap: 2rem;
       position: relative;
@@ -568,7 +568,7 @@
 
         .blob {
           height: 100% !important;
-          right: 2rem !important;
+          right: 1rem !important;
         }
 
         .branding-colors {
