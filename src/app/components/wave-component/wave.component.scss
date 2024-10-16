@@ -1,45 +1,24 @@
+:host {
+  width: 100%;
+}
+
 .waves-footer {
   width: 100%;
   overflow: hidden;
-  left: 0;
-  display: block;
+  display: flex;
   box-sizing: border-box;
-  position: relative;
 
   .waves-image-top,
   .waves-image-bottom {
-    width: calc(100% + 1rem);
-    min-width: 800px;
-    max-height: 200px;
-    height: 100%;
-    display: block;
-    position: relative;
-    left: 50%;
-    bottom: -1rem;
-    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 
   .waves-image-top {
-    transform: translateX(-50%) rotate(180deg);
+    width: 100%;
+    transform: rotate(180deg);
     bottom: 0px;
     top: -1rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .waves-footer {
-    .waves-image-top,
-    .waves-image-bottom {
-      max-height: 600px;
-      height: 100%;
-    }
-
-    .waves-image-top {
-      bottom: 0px;
-      top: -4rem;
-    }
-    .waves-image-bottom {
-      bottom: -4rem;
-    }
   }
 }
