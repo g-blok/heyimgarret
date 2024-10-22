@@ -10,6 +10,7 @@ export const PROJECTS_LIST: Project[] = [
     images: ['assets/projects/camped.png'],
     heroImage: 'assets/projects/camped/camped-hero.png',
     heroTitle: 'assets/projects/camped/camped-hero-title.svg',
+    caption: 'Camped Collective is a unique micro music festival that brings together artists, nature enthusiasts, and community-minded individuals for an intimate and immersive experience.',
     overview: 
       'Camped Collective is the culmination of years of passion for music, starting from burning CDs to hosting my own festival. What began as a crazy idea a decade ago has now grown into a yearly micro festival, bringing together a vibrant community where music, nature, and connection thrive.',
     vision: {
@@ -77,6 +78,7 @@ export const PROJECTS_LIST: Project[] = [
     images: ['assets/projects/ecodraw.png'],
     heroImage: 'assets/projects/ecodraw/ecodraw-hero.png',
     heroTitle: 'assets/projects/ecodraw/ecodraw-hero-title.svg',
+    caption: 'EcoDraw is a platform that helps energy storage and renewable developers sell, build, and manage their projects across the entire lifecycle—from the spark of an idea to operational success.',
     overview:
       'EcoDraw is a platform that helps energy storage and renewable developers sell, build, and manage their projects across the entire lifecycle—from the spark of an idea to operational success.',
     vision: {
@@ -143,6 +145,7 @@ export const PROJECTS_LIST: Project[] = [
     images: ['assets/projects/plant_daddy.png'],
     heroImage: 'assets/projects/plant_daddy/plant-daddy-hero.png',
     heroTitle: 'assets/projects/plant_daddy/plant-daddy-hero-title.svg',
+    caption: 'Plant Daddy is an innovative app that helps users monitor and care for their plants, providing personalized care instructions and connecting them with local nurseries.',
     overview:
       'Plant Daddy is an innovative app that helps users monitor and care for their plants, providing personalized care instructions and connecting them with local nurseries.',
     vision: {
@@ -208,6 +211,7 @@ export const PROJECTS_LIST: Project[] = [
     images: ['assets/projects/sea_quill.png'],
     heroImage: 'assets/sea-quill-hero.jpg',
     heroTitle: 'assets/projects/sea_quill/sea-quill-hero-title.svg',
+    caption: 'Sea Quill is an application that offers a fun pirate-themed take on database exploratory data analysis. Simply connect the app to your database and let AI help you create dashboards, reports, and exports to get a deeper understanding and automation over your data.',
     overview:
       'Sea Quill is an application that offers a fun pirate-themed take on database exploratory data analysis. Simply connect the app to your database and let AI help you create dashboards, reports, and exports to get a deeper understanding and automation over your data.',
     vision: {

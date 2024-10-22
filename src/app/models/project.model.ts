@@ -13,6 +13,7 @@ export interface Project {
   images: string[];
   heroImage: string;
   heroTitle: string;
+  caption: string;
   overview: string;
   vision?: Vision;
   branding?: Branding;
