@@ -10,10 +10,10 @@ export const PROJECTS_LIST: Project[] = [
     images: ['assets/projects/camped.png'],
     heroImage: 'assets/projects/camped/camped-hero.png',
     heroTitle: 'assets/projects/camped/camped-hero-title.svg',
-    overview:
-      'Camped Collective is a unique micro music festival that brings together artists, nature enthusiasts, and community-minded individuals for an intimate and immersive experience.',
+    overview: 
+      'Camped Collective is the culmination of years of passion for music, starting from burning CDs to hosting my own festival. What began as a crazy idea a decade ago has now grown into a yearly micro festival, bringing together a vibrant community where music, nature, and connection thrive.',
     vision: {
-      text: 'Camped Collective is where nature meets neon, celebrating individuality, community, and music. Our festival is the heart of our mission, fostering a vibrant, year-round community that thrives on creativity and connection.',
+      text: 'Camped Collective is where nature meets neon, celebrating individuality, community, and music. What began as a bachelor party festival in 2020 has now grown into a vibrant yearly event, connecting people who share the same passion for creativity and connection. Our festival fosters a space for expression, for pushing boundaries, and for celebrating the unique energy each person brings. This is more than just an event—it’s a year-round collective driven by a love for music and community.',
       images: [
         'assets/projects/camped/vision/camped-dome.png',
         'assets/projects/camped/vision/camped-tent.png',
@@ -22,7 +22,7 @@ export const PROJECTS_LIST: Project[] = [
     branding: {
       colors: {
         image: 'assets/projects/camped/branding/camped-colors.png',
-        text: `Why the bold, highlighter colors? Because we believe that standing out is the new fitting in. These vibrant hues are more than just eye-catching; they symbolize the radiant energy and diverse spirits that come alive when our community gathers. These colors are not just a palette; they're a manifesto. A declaration that together, we can create something that stands out, shines bright, and leaves a lasting, positive impact on both our community and our planet. Join us, and let's paint the world in vibrant unity! 🌈🌍`,
+        text: `Why the bold, highlighter colors? Because I’ve always believed that standing out is the new fitting in. These vibrant hues aren't just for show; they capture the energy, excitement, and diversity that come alive when we gather. Camped is all about celebrating those who aren't afraid to shine bright, express themselves, and be a part of something bigger. Together, we create something that stands out and leaves a lasting, positive impact on both our community and the world around us.`,
         palette: [
           {
             name: 'Hot Pink',
@@ -53,8 +53,9 @@ export const PROJECTS_LIST: Project[] = [
       },
       fonts: {
         image: 'assets/projects/camped/branding/camped-fonts.png',
-        text: `Why the bold, highlighter colors? Because we believe that standing out is the new fitting in. These vibrant hues are more than just eye-catching; they symbolize the radiant energy and diverse spirits that come alive when our community gathers.`,
+        text: `We chose "Permanent Marker" for the main title to capture the bold, DIY energy of Camped. "Montserrat Alternates" adds a modern, unique flair to headers, while "Montserrat" for body text ensures clarity and professionalism, complementing the festival's creative vibe.`,
       },
+      
     },
     content: {
       header: 'CONTENT',
