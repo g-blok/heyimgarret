@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatIconModule } from '@angular/material/icon';
@@ -19,6 +20,7 @@ import { ProjectService } from './services/project.service';
 import { SharedModule } from './shared/shared.module';
 import { ContactModule } from './components/contact/contact.module';
 import { FilterByShowPipe } from './pipes/filter-by-show.pipe';
+import { ResumeRedirectComponent } from './components/resume-redirect/resume-redirect.component';
 
 @NgModule({
   declarations: [
@@ -32,9 +34,11 @@ import { FilterByShowPipe } from './pipes/filter-by-show.pipe';
     FooterComponent,
     LandingComponent,
     FilterByShowPipe,
+    ResumeRedirectComponent,
   ],
   imports: [
     BrowserModule,
+    RouterModule,
     AppRoutingModule,
     MatButtonModule,
     MatChipsModule,

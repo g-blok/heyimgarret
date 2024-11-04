@@ -5,8 +5,13 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { WorkComponent } from './components/work/work.component';
+import { ResumeRedirectComponent } from './components/resume-redirect/resume-redirect.component';
 
 const routes: Routes = [
+  {
+    path: 'resume',
+    component: ResumeRedirectComponent
+  },
   { path: '', component: LandingComponent },
   { path: 'about', component: AboutComponent },
   { path: 'work', component: WorkComponent },
@@ -19,7 +24,7 @@ const routes: Routes = [
         (m) => m.ProjectDetailModule
       ),
   },
-  { path: '**', redirectTo: '' }, // Redirect to the main page
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
