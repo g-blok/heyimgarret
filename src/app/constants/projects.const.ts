@@ -54,7 +54,7 @@ export const PROJECTS_LIST: Project[] = [
       },
       fonts: {
         image: 'assets/projects/camped/branding/camped-fonts.png',
-        text: `We chose "Permanent Marker" for the main title to capture the bold, DIY energy of Camped. "Montserrat Alternates" adds a modern, unique flair to headers, while "Montserrat" for body text ensures clarity and professionalism, complementing the festival's creative vibe.`,
+        text: `I chose "Permanent Marker" for the main title to capture the bold, DIY energy of Camped. "Montserrat Alternates" adds a modern, unique flair to headers, while "Montserrat" for body text ensures clarity and professionalism, complementing the festival's creative vibe.`,
       },
       
     },

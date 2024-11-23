@@ -2,8 +2,8 @@
 
 .about-container {
   width: 100%;
-  min-width: 320px; // Add a minimum width
-  margin: -5px;
+  min-width: 320px;
+  margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -19,6 +19,7 @@
     justify-content: space-between;
     position: relative;
     padding: 2rem;
+    overflow: hidden;
 
     .wrapper {
       display: flex;
@@ -48,6 +49,7 @@
     width: 100%;
     position: absolute;
     overflow: hidden;
+    margin: -1rem;
 
     .foley-wrapper {
       height: 100%;

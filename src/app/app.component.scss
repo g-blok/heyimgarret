@@ -13,6 +13,8 @@ main {
   justify-content: center;
   padding-top: 6rem;
   width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
 
   @media (max-width: 768px) {
     padding: 4rem 0;
