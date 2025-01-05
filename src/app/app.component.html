@@ -5,7 +5,7 @@
 </main>
 
 <main *ngIf="!isMainPage || isResumePage">
-  <router-outlet></router-outlet>
+  <router-outlet (activate)="onActivate($event)"></router-outlet>
 </main>
 
 <app-footer></app-footer>

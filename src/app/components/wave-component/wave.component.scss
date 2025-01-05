@@ -14,7 +14,7 @@
   overflow: hidden;
   display: flex;
   box-sizing: border-box;
-  transform: scale(1.1);
+  transform: scaleX(1.1);
 
   .waves-image-top,
   .waves-image-bottom {
@@ -24,7 +24,7 @@
   }
 
   .waves-image-top {
-    transform: rotate(180deg) translateY(1px) scale(1.1);
+    transform: rotate(180deg) translateY(1px) scaleX(1.1);
     bottom: 0px;
     top: -1rem;
   }
@@ -32,6 +32,6 @@
   .waves-image-bottom {
     top: 0;
     bottom: -1rem;
-    transform: scale(1.1);
+    transform: scaleX(1.1);
   }
 }

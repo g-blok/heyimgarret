@@ -23,7 +23,6 @@ export class ProjectDetailComponent {
     if (projectId) {
       this.project = this.projectService.getProjectById(projectId);
     }
-    console.log(this.contentImages);
   }
 
   scrollLeft(): void {

@@ -74,7 +74,7 @@ export const PROJECTS_LIST: Project[] = [
     id: 'ecodraw',
     displayName: 'EcoDraw',
     link: 'ecodraw',
-    projectUrl: 'https://ecodraw.io',
+    projectUrl: null,
     images: ['assets/projects/ecodraw.png'],
     heroImage: 'assets/projects/ecodraw/ecodraw-hero.png',
     heroTitle: 'assets/projects/ecodraw/ecodraw-hero-title.svg',
