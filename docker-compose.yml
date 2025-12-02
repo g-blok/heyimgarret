@@ -1,9 +1,8 @@
-version: '3.8'
 services:
   heyimgarret:
     image: heyimgarret
     ports:
-      - "8080:80"  # Maps host port 8080 to container port 80
+      - "8080:80" # Maps host port 8080 to container port 80
     networks:
       - nginx-proxy-manager_default
 

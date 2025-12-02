@@ -32,6 +32,7 @@ interface Branding {
     palette: {
       name: string;
       description: string;
+      hex?: string;
     }[];
   };
   fonts: {

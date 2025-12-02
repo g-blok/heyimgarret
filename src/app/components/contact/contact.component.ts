@@ -8,6 +8,7 @@ import { ScreenService } from '../../services/screen.service';
 export class ContactComponent {
   isPopupVisible: boolean = false;
   isSmallScreen = false;
+  currentYear: number = new Date().getFullYear();
   constructor(private screenService: ScreenService) {
     this.isSmallScreen = this.screenService.getIsSmallScreen();
   }

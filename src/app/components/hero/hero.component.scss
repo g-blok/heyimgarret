@@ -23,8 +23,8 @@
 
 .text-column {
   width: 100%;
-  gap: 10px;
-  height: 300px;
+  // gap: 10px;
+  height: 250px;
 
   .title-container {
     position: relative;
@@ -102,7 +102,7 @@
     margin-right: 1rem;
     margin-left: auto;
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
     height: auto;
     aspect-ratio: 1 / 1;
     margin-top: 2rem;

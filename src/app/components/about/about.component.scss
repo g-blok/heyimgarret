@@ -12,19 +12,18 @@
   overflow: hidden;
 
   .about-content {
-    width: 100%;
     max-width: 1200px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     position: relative;
-    padding: 2rem;
+    padding: 3rem;
     overflow: hidden;
 
     .wrapper {
       display: flex;
-      flex: 1;
-      justify-content: flex-start;
+      justify-content: center;
+      align-items: center;
       margin-bottom: 2rem;
 
       .box {
@@ -34,7 +33,7 @@
         .title {
           font-size: 1.5rem;
           font-weight: bold;
-          color: $moss;
+          color: $sage;
         }
         .body-text {
           color: $beige;
@@ -127,19 +126,19 @@
       display: block;
     }
 
-    .about-content {
-      .wrapper {
-        .box {
-          width: 60%;
-        }
-      }
-      .wrapper:nth-child(2) {
-        justify-content: center;
-      }
-      .wrapper:nth-child(3) {
-        justify-content: flex-end;
-      }
-    }
+    // .about-content {
+    //   .wrapper {
+    //     .box {
+    //       width: 60%;
+    //     }
+    //   }
+    //   .wrapper:nth-child(2) {
+    //     justify-content: center;
+    //   }
+    //   .wrapper:nth-child(3) {
+    //     justify-content: flex-end;
+    //   }
+    // }
   }
 }
 

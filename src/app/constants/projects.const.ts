@@ -10,8 +10,9 @@ export const PROJECTS_LIST: Project[] = [
     images: ['assets/projects/camped.png'],
     heroImage: 'assets/projects/camped/camped-hero.png',
     heroTitle: 'assets/projects/camped/camped-hero-title.svg',
-    caption: 'Camped Collective is a unique micro music festival that brings together artists, nature enthusiasts, and community-minded individuals for an intimate and immersive experience.',
-    overview: 
+    caption:
+      'What I started in 2021 as a micro music festival has blossomed into a vibrant community, bringing together artists, nature enthusiasts, and music lovers for intimate, immersive experiences.',
+    overview:
       'Camped Collective is the culmination of years of passion for music, starting from burning CDs to hosting my own festival. What began as a crazy idea a decade ago has now grown into a yearly micro festival, bringing together a vibrant community where music, nature, and connection thrive.',
     vision: {
       text: 'Camped Collective is where nature meets neon, celebrating individuality, community, and music. What began as a bachelor party festival in 2020 has now grown into a vibrant yearly event, connecting people who share the same passion for creativity and connection. Our festival fosters a space for expression, for pushing boundaries, and for celebrating the unique energy each person brings. This is more than just an event—it’s a year-round collective driven by a love for music and community.',
@@ -56,7 +57,6 @@ export const PROJECTS_LIST: Project[] = [
         image: 'assets/projects/camped/branding/camped-fonts.png',
         text: `I chose "Permanent Marker" for the main title to capture the bold, DIY energy of Camped. "Montserrat Alternates" adds a modern, unique flair to headers, while "Montserrat" for body text ensures clarity and professionalism, complementing the festival's creative vibe.`,
       },
-      
     },
     content: {
       header: 'CONTENT',
@@ -78,7 +78,8 @@ export const PROJECTS_LIST: Project[] = [
     images: ['assets/projects/ecodraw.png'],
     heroImage: 'assets/projects/ecodraw/ecodraw-hero.png',
     heroTitle: 'assets/projects/ecodraw/ecodraw-hero-title.svg',
-    caption: 'EcoDraw is a platform that helps energy storage and renewable developers sell, build, and manage their projects across the entire lifecycle—from the spark of an idea to operational success.',
+    caption:
+      'EcoDraw is a platform that helps energy storage and renewable developers sell, build, and manage their projects across the entire lifecycle—from the spark of an idea to operational success.',
     overview:
       'EcoDraw is a platform that helps energy storage and renewable developers sell, build, and manage their projects across the entire lifecycle—from the spark of an idea to operational success.',
     vision: {
@@ -145,7 +146,8 @@ export const PROJECTS_LIST: Project[] = [
     images: ['assets/projects/plant_daddy.png'],
     heroImage: 'assets/projects/plant_daddy/plant-daddy-hero.png',
     heroTitle: 'assets/projects/plant_daddy/plant-daddy-hero-title.svg',
-    caption: 'Plant Daddy is an innovative app that helps users monitor and care for their plants, providing personalized care instructions and connecting them with local nurseries.',
+    caption:
+      'Plant Daddy is an innovative app that helps users monitor and care for their plants, providing personalized care instructions and connecting them with local nurseries.',
     overview:
       'Plant Daddy is an innovative app that helps users monitor and care for their plants, providing personalized care instructions and connecting them with local nurseries.',
     vision: {
@@ -211,7 +213,8 @@ export const PROJECTS_LIST: Project[] = [
     images: ['assets/projects/sea_quill.png'],
     heroImage: 'assets/sea-quill-hero.jpg',
     heroTitle: 'assets/projects/sea_quill/sea-quill-hero-title.svg',
-    caption: 'Sea Quill is an application that offers a fun pirate-themed take on database exploratory data analysis. Simply connect the app to your database and let AI help you create dashboards, reports, and exports to get a deeper understanding and automation over your data.',
+    caption:
+      'Sea Quill is an application that offers a fun pirate-themed take on database exploratory data analysis. Simply connect the app to your database and let AI help you create dashboards, reports, and exports to get a deeper understanding and automation over your data.',
     overview:
       'Sea Quill is an application that offers a fun pirate-themed take on database exploratory data analysis. Simply connect the app to your database and let AI help you create dashboards, reports, and exports to get a deeper understanding and automation over your data.',
     vision: {
@@ -266,6 +269,76 @@ export const PROJECTS_LIST: Project[] = [
         'assets/projects/sea_quill/content/sea-quill-content-3.png',
         'assets/projects/sea_quill/content/sea-quill-content-4.png',
         'assets/projects/sea_quill/content/sea-quill-content-5.png',
+      ],
+    },
+  },
+  {
+    show: false,
+    id: 'bloch-handiworks',
+    displayName: 'Bloch Handiworks',
+    link: 'bloch-handiworks',
+    projectUrl: 'https://blochhandi.works',
+    images: ['assets/projects/bloch_handiworks.png'],
+    heroImage: 'assets/projects/bloch_handiworks/bloch-handiworks-hero.png',
+    heroTitle:
+      'assets/projects/bloch_handiworks/bloch-handiworks-hero-title.svg',
+    caption:
+      'Bloch Handiworks crafts solutions for a climate-minded, solarpunk future—building a circular economy through repair, repurpose, and reduce.',
+    overview:
+      'Bloch Handiworks is a woodworking practice dedicated to finding the best solutions for a climate-minded, solarpunk future. We focus on circular economy principles, reducing waste through repair, repurposing, and thoughtful design that honors both material and craft.',
+    vision: {
+      text: 'Bloch Handiworks envisions a solarpunk future where every piece is part of a circular economy—where we repair instead of replace, repurpose instead of discard, and build with intention for a sustainable world. We craft solutions that reduce waste while creating beautiful, functional pieces that stand the test of time.',
+      images: [
+        'assets/projects/bloch_handiworks/vision/bloch-handiworks-vision-1.png',
+        'assets/projects/bloch_handiworks/vision/bloch-handiworks-vision-2.png',
+      ],
+    },
+    branding: {
+      colors: {
+        image:
+          'assets/projects/bloch_handiworks/branding/bloch-handiworks-colors.png',
+        text: `Our color palette reflects the solarpunk aesthetic—earth tones that ground us in sustainability while evoking the warmth of a workshop where every material has value. These colors aren't just chosen for their beauty; they represent our commitment to a circular economy, where repair and repurpose take precedence over replacement, and waste reduction is woven into every design decision.`,
+        palette: [
+          {
+            name: 'Rusty Wrench',
+            description:
+              'embodies the well-worn tools and time-tested craftsmanship that define our workshop, where every piece tells a story of dedication and skill.',
+            hex: '#C16D47',
+          },
+          {
+            name: 'Workshop Sage',
+            description:
+              'symbolizes our commitment to sustainability—repairing, repurposing, and reducing waste instead of replacing, honoring both the material and the craft.',
+            hex: '#4D6C58',
+          },
+          {
+            name: 'Brass Hardware',
+            description:
+              'captures the attention to detail and the finishing touches that transform a piece from good to exceptional.',
+            hex: '#DCC65D',
+          },
+          {
+            name: 'Just Black',
+            description:
+              'represents the precision, clarity, and bold definition that brings every design to life.',
+            hex: '#000000',
+          },
+        ],
+      },
+      fonts: {
+        image:
+          'assets/projects/bloch_handiworks/branding/bloch-handiworks-fonts.png',
+        text: `Our typography balances craftsmanship with clarity, reflecting the solarpunk ethos of functional beauty. The fonts are chosen to be both timeless and approachable, embodying our commitment to building things that last—just like our circular economy principles.`,
+      },
+    },
+    content: {
+      header: 'CONTENT',
+      images: [
+        'assets/projects/bloch_handiworks/content/bloch-handiworks-content-1.png',
+        'assets/projects/bloch_handiworks/content/bloch-handiworks-content-2.png',
+        'assets/projects/bloch_handiworks/content/bloch-handiworks-content-3.png',
+        'assets/projects/bloch_handiworks/content/bloch-handiworks-content-4.png',
+        'assets/projects/bloch_handiworks/content/bloch-handiworks-content-5.png',
       ],
     },
   },
