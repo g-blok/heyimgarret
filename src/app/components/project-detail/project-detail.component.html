@@ -36,14 +36,21 @@
     <div class="vision-content-wrapper">
       <div class="vision-content">
         <div
-          *ngFor="let image of project?.vision?.images"
+          *ngFor="let imageItem of project?.vision?.images"
           class="vision-image-wrapper"
         >
-          <img
-            [src]="image"
-            alt="{{ project?.displayName }} vision image"
-            class="vision-image"
-          />
+          <div class="vision-image-container">
+            <img
+              [src]="getImageUrl(imageItem)"
+              alt="{{ project?.displayName }} vision image"
+              class="vision-image"
+            />
+            <div
+              *ngIf="hasCredit(imageItem)"
+              class="vision-image-credit"
+              [innerHTML]="getImageCredit(imageItem)"
+            ></div>
+          </div>
         </div>
       </div>
     </div>

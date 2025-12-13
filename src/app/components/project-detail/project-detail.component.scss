@@ -29,23 +29,29 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: flex-start;
 
       .title {
         width: 100%;
         max-height: 100px;
+        align-self: flex-start;
+        object-fit: contain;
+        object-position: left;
       }
       .subtitle {
-        text-align: center;
+        text-align: left;
         font-size: 1.2rem;
         line-height: 3rem;
         max-width: 800px;
+        width: 100%;
       }
       .project-url {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
         gap: 1rem;
         margin-top: 2rem;
+        width: 100%;
 
         .project-url-arrow {
           transform: scale(0.6);
@@ -83,15 +89,15 @@
       width: 100%;
       display: flex;
       flex-direction: column;
-      align-items: start;
+      align-items: flex-start;
       margin-top: -12rem;
       z-index: 2;
       max-width: 800px;
 
       .vision-header {
         display: flex;
-        justify-content: start;
-        align-items: end;
+        justify-content: flex-start;
+        align-items: flex-end;
         max-width: 800px;
 
         .header-text {
@@ -153,12 +159,42 @@
             justify-content: flex-end;
           }
 
-          .vision-image {
-            border-radius: 1rem;
+          .vision-image-container {
+            position: relative;
             height: 100%;
             width: auto;
             max-width: 100%;
-            object-fit: cover;
+
+            .vision-image {
+              border-radius: 1rem;
+              height: 100%;
+              width: auto;
+              max-width: 100%;
+              object-fit: cover;
+            }
+
+            .vision-image-credit {
+              position: absolute;
+              bottom: 0.5rem;
+              right: 0.5rem;
+              background-color: rgba(0, 0, 0, 0.7);
+              color: white;
+              padding: 0.25rem 0.5rem;
+              border-radius: 0.25rem;
+              font-size: 0.5rem;
+              line-height: 1.2;
+              max-width: calc(100% - 1rem);
+
+              a,
+              a:-webkit-any-link,
+              a:link,
+              a:visited,
+              a:hover,
+              a:active {
+                color: white !important;
+                text-decoration: underline;
+              }
+            }
           }
         }
       }
@@ -168,7 +204,7 @@
   .branding {
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     position: relative;
     margin-top: 4rem;
 
@@ -178,8 +214,8 @@
       left: 50%;
       padding-left: 5.5rem;
       display: flex;
-      justify-content: start;
-      align-items: end;
+      justify-content: flex-start;
+      align-items: flex-end;
       max-width: 600px;
 
       .header-text {
@@ -193,7 +229,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: end;
+      align-items: flex-end;
       gap: 2rem;
       position: relative;
       width: 50%;
@@ -210,8 +246,8 @@
       .branding-colors {
         display: flex;
         flex-direction: column;
-        justify-content: end;
-        align-items: start;
+        justify-content: flex-end;
+        align-items: flex-start;
         gap: 2rem;
         width: 100%;
         max-width: 600px;
@@ -252,8 +288,8 @@
     .branding-text {
       display: flex;
       flex-direction: column;
-      justify-content: start;
-      align-items: start;
+      justify-content: flex-start;
+      align-items: flex-start;
       gap: 2rem;
       width: 50%;
       min-width: 400px;
@@ -262,8 +298,8 @@
       .branding-text-body {
         display: flex;
         flex-direction: column;
-        justify-content: start;
-        align-items: start;
+        justify-content: flex-start;
+        align-items: flex-start;
         gap: 2rem;
         width: 100%;
         min-width: 400px;
@@ -283,8 +319,8 @@
         .branding-fonts {
           display: flex;
           flex-direction: column;
-          justify-content: end;
-          align-items: start;
+          justify-content: flex-end;
+          align-items: flex-start;
           gap: 2rem;
           width: 100%;
           max-width: 600px;
