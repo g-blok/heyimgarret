@@ -1,8 +1,29 @@
 services:
-  heyimgarret:
-    image: heyimgarret
+  heyimgarret-dev:
+    profiles:
+      - dev
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: heyimgarret-dev
+    restart: unless-stopped
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/dist
     ports:
-      - "8080:80" # Maps host port 8080 to container port 80
+      - "4200:4200"
+    environment:
+      - NODE_ENV=development
+
+  heyimgarret:
+    profiles:
+      - prod
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: heyimgarret
+    restart: unless-stopped
     networks:
       - nginx-proxy-manager_default
 
