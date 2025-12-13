@@ -27,8 +27,11 @@
       margin-bottom: 2rem;
 
       .box {
+        background-color: $beige;
         width: 100%;
         text-align: left;
+        padding: 2rem;
+        border-radius: 1rem;
 
         .title {
           font-size: 1.5rem;
@@ -36,7 +39,7 @@
           color: $sage;
         }
         .body-text {
-          color: $beige;
+          color: $forest;
         }
       }
     }
@@ -46,6 +49,7 @@
     display: none;
     height: 100%;
     width: 100%;
+    max-width: 1800px;
     position: absolute;
     overflow: hidden;
     margin: -1rem;
