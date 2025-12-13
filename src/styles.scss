@@ -56,6 +56,17 @@ button {
   font-family: inherit;
 }
 
+// Override browser default link color for image credits
+.vision-image-credit a,
+.vision-image-credit a:-webkit-any-link,
+.vision-image-credit a:link,
+.vision-image-credit a:visited,
+.vision-image-credit a:hover,
+.vision-image-credit a:active {
+  color: white !important;
+  text-decoration: underline;
+}
+
 // * {
 //   outline: 1px solid red;
 // }

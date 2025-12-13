@@ -15,16 +15,22 @@ export const PROJECTS_LIST: Project[] = [
     overview:
       'Camped Collective is the culmination of years of passion for music, starting from burning CDs to hosting my own festival. What began as a crazy idea a decade ago has now grown into a yearly micro festival, bringing together a vibrant community where music, nature, and connection thrive.',
     vision: {
-      text: 'Camped Collective is where nature meets neon, celebrating individuality, community, and music. What began as a bachelor party festival in 2020 has now grown into a vibrant yearly event, connecting people who share the same passion for creativity and connection. Our festival fosters a space for expression, for pushing boundaries, and for celebrating the unique energy each person brings. This is more than just an event—it’s a year-round collective driven by a love for music and community.',
+      text: "Camped Collective is where nature meets neon, celebrating individuality, community, and music. What began as a bachelor party festival in 2020 has now grown into a vibrant yearly event, connecting people who share the same passion for creativity and connection. Our festival fosters a space for expression, for pushing boundaries, and for celebrating the unique energy each person brings. This is more than just an event—it's a year-round collective driven by a love for music and community.",
       images: [
-        'assets/projects/camped/vision/camped-dome.png',
-        'assets/projects/camped/vision/camped-tent.png',
+        {
+          image: 'assets/projects/camped/vision/camped-dome.png',
+          credit: '',
+        },
+        {
+          image: 'assets/projects/camped/vision/camped-tent.png',
+          credit: '',
+        },
       ],
     },
     branding: {
       colors: {
         image: 'assets/projects/camped/branding/camped-colors.png',
-        text: `Why the bold, highlighter colors? Because I’ve always believed that standing out is the new fitting in. These vibrant hues aren't just for show; they capture the energy, excitement, and diversity that come alive when we gather. Camped is all about celebrating those who aren't afraid to shine bright, express themselves, and be a part of something bigger. Together, we create something that stands out and leaves a lasting, positive impact on both our community and the world around us.`,
+        text: `Why the bold, highlighter colors? Because I've always believed that standing out is the new fitting in. These vibrant hues aren't just for show; they capture the energy, excitement, and diversity that come alive when we gather. Camped is all about celebrating those who aren't afraid to shine bright, express themselves, and be a part of something bigger. Together, we create something that stands out and leaves a lasting, positive impact on both our community and the world around us.`,
         palette: [
           {
             name: 'Hot Pink',
@@ -71,6 +77,89 @@ export const PROJECTS_LIST: Project[] = [
   },
   {
     show: true,
+    id: 'bloch-handiworks',
+    displayName: 'Bloch Handiworks',
+    link: 'bloch-handiworks',
+    projectUrl: 'https://blochhandi.works',
+    images: ['assets/projects/bloch_handiworks.png'],
+    heroImage: 'assets/projects/bloch_handiworks/bloch-handiworks-hero.png',
+    heroTitle:
+      'assets/projects/bloch_handiworks/bloch-handiworks-hero-title.svg',
+    caption:
+      'Under Bloch Handiworks I craft solutions for a climate-minded, solarpunk future—building a circular economy through the mission of "Repair, Restore, Reinvent".',
+    overview:
+      'Bloch Handiworks is my personal outlet for woodworking, electronics, and fabrication dedicated to finding the best solutions for people looking to give new life to what they already have. I focus on circular economy principles, reducing waste through repair, repurposing, and thoughtful design that honors both material and craft. This is my way of bringing about the solarpunk future I envision.',
+    vision: {
+      text: 'Bloch Handiworks envisions a solarpunk future where every project is focused on reducing waste as part of a circular economy—where I repair instead of replace, repurpose instead of discard, and build with intention for a sustainable world. I craft solutions that bring joy to people while creating beautiful, functional pieces that stand the test of time.',
+      images: [
+        {
+          image:
+            'assets/projects/bloch_handiworks/vision/bloch-handiworks-vision-1.jpg',
+          credit:
+            'Photo by <a href="https://unsplash.com/@motosha?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Salah Ait Mokhtar</a> on <a href="https://unsplash.com/photos/a-pile-of-scissors-BsIjam4Bjm4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>',
+        },
+        {
+          image:
+            'assets/projects/bloch_handiworks/vision/bloch-handiworks-vision-2.png',
+          credit:
+            'Photo by <a href="https://unsplash.com/@grundsteins?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kristaps Grundsteins</a> on <a href="https://unsplash.com/photos/workshop-with-woodworking-machinery-and-large-window-Dzd-Xt3QWKw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>',
+        },
+      ],
+    },
+    branding: {
+      colors: {
+        image:
+          'assets/projects/bloch_handiworks/branding/bloch-handiworks-colors.png',
+        text: `My color palette reflects the solarpunk aesthetic with retro flair—earth tones that ground me in sustainability while evoking the warmth of a workshop where every material has value. These colors aren't just chosen for their beauty; they represent my commitment to a better world, where repair and repurpose take precedence over replacement, and waste reduction is woven into every design decision.`,
+        palette: [
+          {
+            name: 'Rusty Wrench',
+            description:
+              'embodies the well-worn tools and time-tested craftsmanship that define my workshop, where every piece tells a story of dedication and skill.',
+            hex: '#C16D47',
+          },
+          {
+            name: 'Workshop Sage',
+            description:
+              'symbolizes my commitment to sustainability—repairing, repurposing, and reducing waste instead of replacing, honoring both the material and the craft.',
+            hex: '#4D6C58',
+          },
+          {
+            name: 'Brass Hardware',
+            description:
+              'captures the attention to detail and the finishing touches that transform a piece from good to exceptional.',
+            hex: '#DCC65D',
+          },
+          {
+            name: 'Just Black',
+            description:
+              'represents the precision, clarity, and bold definition that brings every design to life.',
+            hex: '#000000',
+          },
+        ],
+      },
+      fonts: {
+        image:
+          'assets/projects/bloch_handiworks/branding/bloch-handiworks-fonts.png',
+        text: `My typography embraces a timeless aesthetic—something that endures. I chose retro fonts to harken back to when things were just built different and made to last. Chango for titles captures that enduring energy, while Comfortaa for body text ensures clarity and approachability. Together, they're like the well-worn tools in my workshop: reliable, beautiful, and built to stand the test of time.`,
+      },
+    },
+    content: {
+      header: 'CONTENT',
+      images: [
+        'assets/projects/bloch_handiworks/content/bloch-handiworks-content-1.png',
+        'assets/projects/bloch_handiworks/content/bloch-handiworks-content-2.JPG',
+        'assets/projects/bloch_handiworks/content/bloch-handiworks-content-3.JPG',
+        'assets/projects/bloch_handiworks/content/bloch-handiworks-content-4.JPG',
+        'assets/projects/bloch_handiworks/content/bloch-handiworks-content-5.JPG',
+        'assets/projects/bloch_handiworks/content/bloch-handiworks-content-6.JPG',
+        'assets/projects/bloch_handiworks/content/bloch-handiworks-content-7.JPG',
+        'assets/projects/bloch_handiworks/content/bloch-handiworks-content-8.JPG',
+      ],
+    },
+  },
+  {
+    show: true,
     id: 'ecodraw',
     displayName: 'EcoDraw',
     link: 'ecodraw',
@@ -83,16 +172,24 @@ export const PROJECTS_LIST: Project[] = [
     overview:
       'EcoDraw is a platform that helps energy storage and renewable developers sell, build, and manage their projects across the entire lifecycle—from the spark of an idea to operational success.',
     vision: {
-      text: `EcoDraw envisions a world where managing energy projects is as inspiring as the clean future we’re working towards. Our platform is designed to make energy projects easy and fun, whether you're an engineer in the weeds or a C-suite exec looking at the big picture.`,
+      text: `EcoDraw envisions a world where managing energy projects is as inspiring as the clean future we're working towards. Our platform is designed to make energy projects easy and fun, whether you're an engineer in the weeds or a C-suite exec looking at the big picture.`,
       images: [
-        'assets/projects/ecodraw/vision/ecodraw-vision-1.png',
-        'assets/projects/ecodraw/vision/ecodraw-vision-2.png',
+        {
+          image: 'assets/projects/ecodraw/vision/ecodraw-vision-1.png',
+          credit:
+            'Photo by <a href="https://unsplash.com/@jxk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jan Kopřiva</a> on <a href="https://unsplash.com/photos/white-windmill-weBdEIOZjF4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>',
+        },
+        {
+          image: 'assets/projects/ecodraw/vision/ecodraw-vision-2.jpg',
+          credit:
+            'Photo by <a href="https://unsplash.com/@jeisblack?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Mavrommatis</a> on <a href="https://unsplash.com/photos/silhouette-photography-of-assorted-solar-panel-behind-trees-KRWfiWPqbq8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>',
+        },
       ],
     },
     branding: {
       colors: {
         image: 'assets/projects/ecodraw/branding/ecodraw-colors.png',
-        text: `Inspired by solarpunk aesthetics, our color palette of muted earth tones—Moss Veil, Evergreen Haze, Fern Mist, Riverstone, and Sunlit Dune—evokes nature’s calm resilience while grounding the platform in a modern, professional vibe.`,
+        text: `Our color palette of muted greens and blues—Moss Veil, Evergreen Haze, Fern Mist, Riverstone, and Sunlit Dune—strikes a balance between sustainability and professionalism. These tones convey our commitment to renewable energy while maintaining a modern, work-ready aesthetic that speaks to both engineers in the field and executives in the boardroom.`,
         palette: [
           {
             name: 'Moss Veil',
@@ -107,7 +204,7 @@ export const PROJECTS_LIST: Project[] = [
           {
             name: 'Fern Mist',
             description:
-              'captures the freshness and innovation of EcoDraw’s approach.',
+              "captures the freshness and innovation of EcoDraw's approach.",
           },
           {
             name: 'Riverstone',
@@ -153,8 +250,14 @@ export const PROJECTS_LIST: Project[] = [
     vision: {
       text: 'Plant Daddy envisions a world where every plant grooves to the rhythm of life, and every plant parent feels like a disco star in the garden. Our mission is to cultivate a community of funky green thumbs who share a passion for nurturing nature with a groovy twist.',
       images: [
-        'assets/projects/plant_daddy/vision/plant-daddy-vision-1.png',
-        'assets/projects/plant_daddy/vision/plant-daddy-vision-2.png',
+        {
+          image: 'assets/projects/plant_daddy/vision/plant-daddy-vision-1.png',
+          credit: '',
+        },
+        {
+          image: 'assets/projects/plant_daddy/vision/plant-daddy-vision-2.png',
+          credit: '',
+        },
       ],
     },
     branding: {
@@ -220,8 +323,14 @@ export const PROJECTS_LIST: Project[] = [
     vision: {
       text: `Sea Quill envisions a world where data exploration is as adventurous and exciting as a pirate's quest. Our app transforms the mundane task of data analysis into a thrilling journey, empowering users to uncover hidden treasures within their data.`,
       images: [
-        'assets/projects/sea_quill/vision/sea-quill-ship.png',
-        'assets/projects/sea_quill/vision/sea-quill-map.png',
+        {
+          image: 'assets/projects/sea_quill/vision/sea-quill-ship.png',
+          credit: '',
+        },
+        {
+          image: 'assets/projects/sea_quill/vision/sea-quill-map.png',
+          credit: '',
+        },
       ],
     },
     branding: {
@@ -269,76 +378,6 @@ export const PROJECTS_LIST: Project[] = [
         'assets/projects/sea_quill/content/sea-quill-content-3.png',
         'assets/projects/sea_quill/content/sea-quill-content-4.png',
         'assets/projects/sea_quill/content/sea-quill-content-5.png',
-      ],
-    },
-  },
-  {
-    show: false,
-    id: 'bloch-handiworks',
-    displayName: 'Bloch Handiworks',
-    link: 'bloch-handiworks',
-    projectUrl: 'https://blochhandi.works',
-    images: ['assets/projects/bloch_handiworks.png'],
-    heroImage: 'assets/projects/bloch_handiworks/bloch-handiworks-hero.png',
-    heroTitle:
-      'assets/projects/bloch_handiworks/bloch-handiworks-hero-title.svg',
-    caption:
-      'Bloch Handiworks crafts solutions for a climate-minded, solarpunk future—building a circular economy through repair, repurpose, and reduce.',
-    overview:
-      'Bloch Handiworks is a woodworking practice dedicated to finding the best solutions for a climate-minded, solarpunk future. We focus on circular economy principles, reducing waste through repair, repurposing, and thoughtful design that honors both material and craft.',
-    vision: {
-      text: 'Bloch Handiworks envisions a solarpunk future where every piece is part of a circular economy—where we repair instead of replace, repurpose instead of discard, and build with intention for a sustainable world. We craft solutions that reduce waste while creating beautiful, functional pieces that stand the test of time.',
-      images: [
-        'assets/projects/bloch_handiworks/vision/bloch-handiworks-vision-1.png',
-        'assets/projects/bloch_handiworks/vision/bloch-handiworks-vision-2.png',
-      ],
-    },
-    branding: {
-      colors: {
-        image:
-          'assets/projects/bloch_handiworks/branding/bloch-handiworks-colors.png',
-        text: `Our color palette reflects the solarpunk aesthetic—earth tones that ground us in sustainability while evoking the warmth of a workshop where every material has value. These colors aren't just chosen for their beauty; they represent our commitment to a circular economy, where repair and repurpose take precedence over replacement, and waste reduction is woven into every design decision.`,
-        palette: [
-          {
-            name: 'Rusty Wrench',
-            description:
-              'embodies the well-worn tools and time-tested craftsmanship that define our workshop, where every piece tells a story of dedication and skill.',
-            hex: '#C16D47',
-          },
-          {
-            name: 'Workshop Sage',
-            description:
-              'symbolizes our commitment to sustainability—repairing, repurposing, and reducing waste instead of replacing, honoring both the material and the craft.',
-            hex: '#4D6C58',
-          },
-          {
-            name: 'Brass Hardware',
-            description:
-              'captures the attention to detail and the finishing touches that transform a piece from good to exceptional.',
-            hex: '#DCC65D',
-          },
-          {
-            name: 'Just Black',
-            description:
-              'represents the precision, clarity, and bold definition that brings every design to life.',
-            hex: '#000000',
-          },
-        ],
-      },
-      fonts: {
-        image:
-          'assets/projects/bloch_handiworks/branding/bloch-handiworks-fonts.png',
-        text: `Our typography balances craftsmanship with clarity, reflecting the solarpunk ethos of functional beauty. The fonts are chosen to be both timeless and approachable, embodying our commitment to building things that last—just like our circular economy principles.`,
-      },
-    },
-    content: {
-      header: 'CONTENT',
-      images: [
-        'assets/projects/bloch_handiworks/content/bloch-handiworks-content-1.png',
-        'assets/projects/bloch_handiworks/content/bloch-handiworks-content-2.png',
-        'assets/projects/bloch_handiworks/content/bloch-handiworks-content-3.png',
-        'assets/projects/bloch_handiworks/content/bloch-handiworks-content-4.png',
-        'assets/projects/bloch_handiworks/content/bloch-handiworks-content-5.png',
       ],
     },
   },

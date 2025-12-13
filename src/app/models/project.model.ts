@@ -20,9 +20,14 @@ export interface Project {
   content?: Content;
 }
 
+export interface VisionImage {
+  image: string;
+  credit: string;
+}
+
 interface Vision {
   text: string;
-  images?: string[];
+  images?: (string | VisionImage)[];
 }
 
 interface Branding {
