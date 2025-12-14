@@ -5,6 +5,7 @@ COPY package.json ./
 RUN npm install
 COPY . .
 RUN npm run build
+RUN npm run compress-images
 
 # Stage 2: Serve the app using Nginx
 FROM nginx:alpine
