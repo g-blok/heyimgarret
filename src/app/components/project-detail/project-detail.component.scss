@@ -387,7 +387,7 @@
       content: "";
       position: absolute;
       top: 0;
-      width: 6rem;
+      width: 4rem;
       height: 100%;
       z-index: 1;
       pointer-events: none;
@@ -501,12 +501,13 @@
       align-items: center !important;
 
       .title {
-        padding: 0 1rem !important;
-        width: calc(100% - 2rem) !important;
+        padding: 0 2rem !important;
+        width: calc(100% - 4rem) !important;
       }
 
       .subtitle {
         padding: 0 2rem !important;
+        width: calc(100% - 4rem) !important;
         text-align: start !important;
       }
 
@@ -544,7 +545,7 @@
           width: 100% !important;
           min-width: 0 !important;
           margin: 0 !important;
-          margin-top: 4rem !important;
+          margin-top: 6rem !important;
           padding: 0 !important;
         }
       }
@@ -665,7 +666,7 @@
   .content-images-carousel {
     &::before,
     &::after {
-      width: 2rem !important;
+      display: none !important;
     }
 
     .content-images {

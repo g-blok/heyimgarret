@@ -88,10 +88,12 @@ async function compressImages(): Promise<void> {
         const isPng = ext === 'png';
         const isWebp = ext === 'webp';
 
-        let sharpInstance = sharp(inputPath).resize(1200, null, {
-          withoutEnlargement: true,
-          fit: 'inside',
-        });
+        let sharpInstance = sharp(inputPath)
+          .rotate() // Auto-rotate based on EXIF orientation and remove orientation tag
+          .resize(1200, null, {
+            withoutEnlargement: true,
+            fit: 'inside',
+          });
 
         // Preserve format or convert to appropriate format
         if (isPng) {

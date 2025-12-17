@@ -26,15 +26,72 @@ export class ProjectDetailComponent {
   }
 
   scrollLeft(): void {
-    this.contentImages.nativeElement.scrollBy({
-      left: -300,
+    const container = this.contentImages.nativeElement;
+    const scrollLeft = container.scrollLeft;
+    const containerWidth = container.clientWidth;
+
+    // Get all image wrappers
+    const imageWrappers = Array.from(
+      container.querySelectorAll('.content-image-wrapper')
+    ) as HTMLElement[];
+    if (imageWrappers.length === 0) return;
+
+    // Find the currently visible image (the one closest to the left edge)
+    let currentIndex = 0;
+    let minDistance = Infinity;
+
+    imageWrappers.forEach((wrapper, index) => {
+      const wrapperLeft = wrapper.offsetLeft;
+      const distance = Math.abs(wrapperLeft - scrollLeft);
+      if (distance < minDistance) {
+        minDistance = distance;
+        currentIndex = index;
+      }
+    });
+
+    // Scroll to previous image
+    const targetIndex = Math.max(0, currentIndex - 1);
+    const targetWrapper = imageWrappers[targetIndex];
+    const targetScroll = targetWrapper.offsetLeft;
+
+    container.scrollTo({
+      left: targetScroll,
       behavior: 'smooth',
     });
   }
 
   scrollRight(): void {
-    this.contentImages.nativeElement.scrollBy({
-      left: 300,
+    const container = this.contentImages.nativeElement;
+    const scrollLeft = container.scrollLeft;
+    const containerWidth = container.clientWidth;
+
+    // Get all image wrappers
+    const imageWrappers = Array.from(
+      container.querySelectorAll('.content-image-wrapper')
+    ) as HTMLElement[];
+    if (imageWrappers.length === 0) return;
+
+    // Find the currently visible image (the one closest to the left edge)
+    let currentIndex = 0;
+    let minDistance = Infinity;
+
+    imageWrappers.forEach((wrapper, index) => {
+      const wrapperLeft = wrapper.offsetLeft;
+      const distance = Math.abs(wrapperLeft - scrollLeft);
+      if (distance < minDistance) {
+        minDistance = distance;
+        currentIndex = index;
+      }
+    });
+
+    // Scroll to next image
+    const maxIndex = imageWrappers.length - 1;
+    const targetIndex = Math.min(maxIndex, currentIndex + 1);
+    const targetWrapper = imageWrappers[targetIndex];
+    const targetScroll = targetWrapper.offsetLeft;
+
+    container.scrollTo({
+      left: targetScroll,
       behavior: 'smooth',
     });
   }
